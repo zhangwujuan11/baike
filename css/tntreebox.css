@@ -175,3 +175,24 @@
 	right: 0;
 	display: none;
 }
+.ex-btn{
+	position: absolute;
+	top: 35%;
+	right: 60px;
+}
+.ex-btn button{
+	
+	margin-bottom: 8px;
+	width: 100px;
+	height: 36px;
+	border-radius: 6px;
+	color: white;
+	border: none;
+	display: none;
+}
+.ex-btn1{
+	background: #FF8800;
+}
+.ex-btn2{
+	background: #82BE20;
+}

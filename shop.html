@@ -130,6 +130,12 @@
 						</div>
 					</span>
 				</div>
+				<div class="ex-btn">
+					<p><button class="ex-btn1">购买商品</button></p>
+					<p><button class="ex-btn2">发布商品</button></p>
+				</div>
+				
+				
 			</div>
         </div>
         
@@ -155,31 +161,4 @@
         <!--页脚-->
         <footer></footer>
 	</body>
-	<script>
-	$(".root li").click(function(){
-		$(".tntreebox").css("background","rgba(0,0,0,0.5)")
-		$("#close").show()
-		var pnum=$(this).index()+1;
-		$(this).addClass("cur");
-		$(this).siblings().removeClass("cur")
- 		$('.tree2 div').not("#o_"+pnum).hide()
- 		$('.tree3 div').hide()
-		$("#o_"+pnum).show(function(){
-			$(this).find("li").click(function  () {
-				var nnum=$(this).index()+1;
-				$(this).addClass("cur");
-				$(this).siblings().removeClass("cur")
-				$("#o_"+pnum+"_"+nnum).show()
-				$('.tree3 div').not("#o_"+pnum+"_"+nnum).hide()
-			})
-		})
-	})
-	
-	$("#close").click(function  () {
-		$(".tntreebox").css("background","transparent")
-		$("#close").hide()
-		$(".box").not(".root").hide()
-		$(".root li").removeClass("cur")
-	})
-	</script>
 </html>
