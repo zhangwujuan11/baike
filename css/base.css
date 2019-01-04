@@ -1,0 +1,142 @@
+body,html{
+	width: 100%;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a,a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color:#999;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.main{
+	width: 1200px;
+	position: relative;
+	z-index: 10;
+	margin-left: calc(50% - 600px);
+}
+
+.maincolor{
+	color: #FF8800;
+}
+
+/*首页*/
+header{
+	font-size: 12px;
+	color: #999999;
+	background: #F3F3F3;
+	
+}
+header a{
+	color: #999999;
+}
+header #loginout{
+	margin-left: 15px;
+}
+.dropdown-menu{
+	background: #fff;
+	min-width: auto;
+	
+}
+.dropdown-menu>li>a{
+	color: #999999;
+}
+.dropdown-menu>li{
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.dropdown-menu>li>a{
+	color: black;
+	background:white !important;
+}
+.dropdown-menu>li>a:hover{
+	color:#FF8800 ;
+}
+#serchpu input{
+	width: 520px;
+	height: 40px;
+	text-indent: 10px;
+}
+#serchpu{
+	margin-top: 300px;
+	text-align: center;
+}
+#serchpu button{
+	width: 60px;
+	height: 40px;
+	background: #FF8800;
+	color: white;
+	border: none;
+	margin-left: -4px;
+}
+.topserch{
+	padding: 25px 0;
+	
+}
+.topserch_box{
+	border-bottom: 1px solid #E5E5E5;
+}
+.shop_name{
+	font-size: 20px;
+	color: #333333;
+}
+.topserch li:nth-child(1){
+	padding-right: 15px;
+	border-right: 1px solid #E5E5E5;
+}
+.topserch li:nth-child(2){
+	padding-left: 15px;
+}
+.dropdown{
+	position: relative;
+	z-index: 10;
+}
+.buislogo{
+	margin: 20px 0;
+}
+.glyphicon{
+	top: calc(50% - 35px);
+}
+.comm-tip{
+	color: #666666;
+	font-size: 20px;
+	border-bottom: 2px solid #F4F4F4;
+	padding: 15px 0;
+}
+.comm-tip span{
+	font-size: 16px;
+}
+.shop-show li{
+	width: 25%;
+	height: 245px;
+	padding: 8px;
+	float: left;
+}
+.shop-show li img{
+	margin-bottom: 10px;
+}
+.shop-show li:hover{
+	box-shadow: 5px 5px 20px #888888;
+	-moz-box-shadow: 5px 5px 20px #888888;
+}
+footer{
+	background: #6E6760;
+	width: 100%;
+	height: 150px;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	padding-top:50px;
+	margin-top: 15px;
+}
+footer span{
+	font-size: 12px;
+}

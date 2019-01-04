@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <meta charset="utf-8" />
+        <title>百客异想</title>
+        
+        <script src="js/sollup.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+            .carousel-inner {
+                height: 100%;
+                width: 100%
+            }
+             
+            .item {
+                height: 100%;
+                width: 100%
+            }
+             
+            .carousel-inner>.item>a>img,
+            .carousel-inner>.item>img {
+                height: 100%;
+                width: 100%;
+            }
+            header{
+				font-size: 12px;
+				color: white;
+				margin-top: 20px;
+				background: none;
+			}
+			header a{
+				color: white;
+			}
+			header #loginout{
+				margin-left: 15px;
+			}
+			.dropdown-menu{
+				background: #000;
+				min-width: auto;
+				
+			}
+			.dropdown-menu>li>a{
+				color: white;
+				background: black !important;
+			}
+            a,a:link,a:visited,a:hover,a:active{
+				text-decoration: none;
+				color: white;
+			}
+			.dropdown-menu>li{
+				border-bottom: none;
+			}
+        </style>
+    </head>
+ 
+    <body>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="position:fixed;top:0px;height: 100%;width:100%;">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/background.png">
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+        	<!--导航-->
+        	<header>
+        		欢迎来到百客异想，
+        		<span class="maincolor">15261111111</span>
+        		<a href="#" id="loginout">【安全退出】</a>
+        		 <li class="dropdown fr">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			        	我的百客异想
+			            <img src="img/icon_drop-down.png"/>
+			        </a>
+			        <ul class="dropdown-menu">
+			            <li>
+			                <a href="#">个人中心</a>
+			            </li>
+			            <li>
+			                <a href="#">购买商品</a>
+			            </li>
+			        </ul>
+			    </li>
+        	</header>
+        	
+        	<!--搜索框-->
+        	<form action="" id="serchpu">
+				<input type="" name=""  value="" placeholder="请输入主播名称" />
+				<button>搜索</button>
+			</form>
+        </div>
+        
+        
+        
+        
+ 
+    </body>
+    <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+        $('#carousel-example-generic').carousel({
+            pause: true,
+            interval: false
+        });
+    </script>
+ 
+</html>
