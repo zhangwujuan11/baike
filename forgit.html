@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			footer{
+				background: transparent;
+				color: #999999;
+			}
+		</style>
+	</head>
+	<body style="background:#F0F3F7;">
+		<div class="regist-header">
+			<div class="main">
+				<img src="img/login/LOGO.png"/>
+				<span class="maincolor">百客异想</span>
+				<span class="reg-tit">注册</span>
+			</div>
+		</div>
+		
+		<main class="main reg-con">
+			<p class="reg-title"><img src="img/login/reg-title.png"/></p>
+			<form class="reg-form" action="" method="post">
+				<p>手机号码<input id="phone" type="tel" placeholder="请输入您的手机号码"/><span style="margin-top:11px;right: 28%;" class="stt"></span></p>
+				<p>&emsp;&emsp;密码<input type="password" placeholder="请输入您的登陆密码"/></p>
+				<p>
+					&emsp;验证码<input type="text" placeholder="请输入获取的验证码"/>
+					<input type="button" id="sedbtn" value="获取验证码" onclick="sendemail()" />
+				</p>
+				<p><button class="mainbtn" style="margin: 20px 0 0 40px">立即注册</button></p>
+			</form>
+		</main>
+		<footer></footer>
+	</body>
+	<script type="text/javascript">
+		//手机号验证
+		$("#phone").blur(function  () {
+			function isPhoneNo(phone) { 
+		 var pattern = /^1[34578]\d{9}$/; 
+		 return pattern.test(phone); 
+		}
+		if ($('#phone').val().length == 0) {
+	  $(".stt").html("<img src='img/login/icon_erro.png'/>请填写手机号")
+	  
+	  $('#phone').focus();
+	 } else {
+	  if(isPhoneNo($('#phone').val()) == false) {
+	   $(".stt").html("<img src='img/login/icon_erro.png'/>手机号不正确");
+	   $('#phone').focus();
+	  }else{
+	  	$(".stt").html(" ");
+	  }
+	 }
+	})
+		
+	//倒计时
+	var countdown=60; 
+	function sendemail(){
+	    var obj = $("#sedbtn");
+	    settime(obj);
+	    
+	    }
+	function settime(obj) { //发送验证码倒计时
+	    if (countdown == 0) { 
+	        obj.attr('disabled',false); 
+	        //obj.removeattr("disabled"); 
+	        obj.val("获取验证码");
+	        countdown = 3; 
+	        return;
+	        $("#sedbtn").css("background","rgba(237,241,232,1)");
+	    } else { 
+	        obj.attr('disabled',true);
+	        obj.val("重新获取(" + countdown + ")");
+	        countdown--;
+	        $("#sedbtn").css({"background":"#EDF1E8","color":"#868686"});
+	    } 
+	setTimeout(function() { 
+	    settime(obj) }
+	    ,1000) 
+	}
+	</script>
+</html>

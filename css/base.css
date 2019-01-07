@@ -179,6 +179,31 @@ footer span{
 	font-size: 18px;
 	font-weight: normal;
 }
+.log-box input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #D9D9D9;
+	height: 30px;
+	outline: none;
+	margin-bottom: 20px;
+	text-indent: 10px;
+}
+.log-box .bb{
+	width: 0%;
+    border-bottom: 2px solid #57d9ff;
+    margin: 0;
+    margin-top: -21px;
+    position: absolute;
+    /*animation:mymove 2s infinite;*/
+}
+
+@keyframes mymove
+{
+from {width:0px;}
+to {width:83%;}
+}
+
+
 #log-btn{
 	width: 330px;
 	height: 40px;
@@ -187,3 +212,125 @@ footer span{
 	color: white;
 	border-radius: 3px;
 }
+.choo-tip,.choo-way,.choo-pc{
+	position: absolute;
+}
+.choo-way,.choo-pc{
+	right: 10px;
+}
+.choo-tip{
+	right: 60px;
+}
+.log-box .thrd{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #999999;
+}
+.log-box .thrd img{
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.log-box .box-bott{
+	text-align: right;
+}
+.log-box .box-bott a{
+	margin-left: 10px;
+}
+.stt{
+	position: absolute;
+    font-size: 12px;
+    color: #ff5565;
+    right: 35px;
+    margin-top: -46px;
+}
+.strr{
+	position: absolute;
+    font-size: 12px;
+    color: #ff5565;
+    right: 35px;
+    margin-top: -46px;
+}
+.erq{
+	display: none;
+	text-align: center;
+}
+.pc-tip{
+	font-size: 18px;
+	text-align: left;
+	padding-left:113px;
+}
+.pc-tip img{
+	position: absolute;
+    margin-top: 8px;
+    margin-left: -45px;
+}
+/*注册*/
+.regist-header{
+	background: white;
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #E5E5E5;
+	line-height: 70px;
+}
+
+.regist-header .maincolor{
+	font-size: 30px;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+.reg-tit{
+	font-size: 18px;
+	color: #333;
+	/*float: left;*/
+	padding-left: 20px;
+	border-left: 1px solid #E5E5E5;
+	margin: 0;
+}
+.reg-con{
+	margin-top: 10px;
+	background: white;
+	text-align: center;
+	padding: 35px 50px 100px 50px;
+}
+.reg-con .reg-title{
+	padding-bottom: 40px;
+	border-bottom: 1px dashed rgba(229,229,229,1);
+}
+
+.reg-form{
+	margin-top: 30px;
+}
+.reg-form p{
+	font-size: 14px;
+	color: #333333;
+}
+.reg-form input{
+	width: 300px;
+	height: 36px;
+	border:1px solid rgba(217,217,217,1);
+	border-radius:2px;
+	text-indent: 10px;
+	margin-left: 15px;
+}
+.mainbtn{
+    width: 330px;
+    height: 40px;
+    border: none;
+    background: #FF8800;
+    color: white;
+    border-radius: 3px;
+}
+#sedbtn{
+    width: 110px;
+    height: 40px;
+    background: rgba(237,241,232,1);
+    border-radius: 2px;
+    position: absolute;
+    padding: 0;
+    text-indent: 0;
+    margin-left: -110px;
+    background: #90CF3C;
+    color: white;
+    }
