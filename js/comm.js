@@ -63,11 +63,14 @@ $(document).ready(function () {
 	var accordion = new Accordion($('.accordion'), false);
 	
 	$(".link").click(function  () {
-		var puls="img/personal/icon_plus.png";
-		if ($(this).find(".plus").attr("src") == puls) {
+		var puls=$(this).parent(".open").parent(".accordion").css("display");
+		console.log(puls)
+		if (puls == "block") {
 			$(this).find(".plus").attr("src","img/personal/icon_jian.png");
+			$(this).parent().parent(".accordion").siblings().find(".plus").attr("src","img/personal/icon_plus.png");
 		} else{
 			$(this).find(".plus").attr("src","img/personal/icon_plus.png");
+			$(this).parent().parent(".accordion").siblings().find(".plus").attr("src","img/personal/icon_plus.png");
 		}
 	})
 	
