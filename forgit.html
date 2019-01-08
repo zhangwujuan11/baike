@@ -29,10 +29,6 @@
 			<p class="reg-title"><img id="speed1" src="img/login/speed1.png"/></p>
 			<div class="reg-form reg-form1">
 				<p>手机号<input id="phone" type="tel" placeholder="请输入您的手机号码"/><span style="margin-top:11px;right: 28%;" class="stt"></span></p>
-				<p>
-					&emsp;验证码<input type="text" placeholder="请输入获取的验证码"/>
-					<input type="button" id="sedbtn" value="获取验证码" onclick="sendemail()" />
-				</p>
 				<p><button class="mainbtn" id="nextbtn" style="margin: 20px 0 0 40px">下一步</button></p>
 			</div>
 			
@@ -41,9 +37,22 @@
 				<p><input type="button" name="nextbtn2" id="nextbtn2" value="使用绑定手机找回" /></p>
 			</div>
 			
-			<div class="reg-form3">
-				<p>正在找回密码的账号：<span class="maincolor">152622222222</span></p>
-				<p><input type="button" name="nextbtn2" id="nextbtn3" value="使用绑定手机找回" /></p>
+			<div class="reg-form3 reg-form">
+				<p>
+					&emsp;&emsp;手机号<input style="border: none;" type="text" value="152*****1111"/>
+				</p>
+				<p>
+					&emsp;&emsp;验证码<input type="text" placeholder="请输入获取的验证码"/>
+					<input type="button" id="sedbtn" value="获取验证码" onclick="sendemail()" />
+				</p>
+				<p>
+					&emsp;&emsp;新密码<input type="password" placeholder="请输入您的新密码"/>
+				</p>
+				<p>
+					确认新密码<input type="password" placeholder="请再次输入您的新密码"/>
+				</p>
+				<p><button class="mainbtn" id="nextbtn3" style="margin: 20px 0 0 40px">下一步</button></p>
+				
 			</div>
 			
 			<div class="reg-form4">

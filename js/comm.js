@@ -55,22 +55,23 @@ $(document).ready(function () {
 		$this.parent().toggleClass('open');
 		if(!e.data.multiple) {
 			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-//			$(".plus").attr("src","img/personal/icon_jian.png")
 		}else{
-//			$(".plus").attr("src","img/personal/icon_plus.png")
 		}
 	}
 	var accordion = new Accordion($('.accordion'), false);
 	
 	$(".link").click(function  () {
-		var puls=$(this).parent(".open").parent(".accordion").css("display");
-		console.log(puls)
+		var puls=$(this).find(".plus").css("display");
 		if (puls == "block") {
-			$(this).find(".plus").attr("src","img/personal/icon_jian.png");
-			$(this).parent().parent(".accordion").siblings().find(".plus").attr("src","img/personal/icon_plus.png");
+			$(this).find(".jian").show();
+			$(this).find(".plus").hide();
+			$(this).parent().parent(".accordion").siblings().find(".plus").show();
+			$(this).parent().parent(".accordion").siblings().find(".jian").hide();
 		} else{
-			$(this).find(".plus").attr("src","img/personal/icon_plus.png");
-			$(this).parent().parent(".accordion").siblings().find(".plus").attr("src","img/personal/icon_plus.png");
+			$(this).find(".plus").show();
+			$(this).find(".jian").hide();
+			$(this).parent().parent(".accordion").siblings().find(".plus").show();
+			$(this).parent().parent(".accordion").siblings().find(".jian").hide();
 		}
 	})
 	
