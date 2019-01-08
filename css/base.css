@@ -337,6 +337,21 @@ to {width:83%;}
 .hea-img{
 	margin-right: 20px;
 }
+
+/*忘记密码*/
+.reg-form2,.reg-form3,.reg-form4{
+	display: none;
+	font-size:14px ;
+}
+#nextbtn2{
+	width:358px;
+	height:36px;
+	background:rgba(144,207,60,1);
+	border:1px solid rgba(144,207,60,1);
+	border-radius:2px;
+	color:white;
+	margin-top: 16px;
+}
     
 /*个人中心*/
  .main .gps{
@@ -378,7 +393,7 @@ to {width:83%;}
 .accordion {
 	width: 100%;
 	max-width: 360px;
-	margin: 30px auto 20px;
+	margin: 15px auto 20px;
 	background: #fff;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -459,4 +474,52 @@ to {width:83%;}
 	text-align: left;
 }
 
+.per-comr{
+ 	width:960px;
+ 	/*text-align: center;*/
+ 	float: right;
+ }
+ .per-comr .per-serch{
+ 	width: 100%;
+ 	height: 40px;
+ 	text-indent: 10px;
+ 	border:1px solid #E5E5E5;
+ }
+.per-comr #per-bnt{
+    width: 80px;
+    height: 40px;
+    background: rgba(255,136,0,1);
+    color: white;
+    border: none;
+    margin-top: -40px;
+    z-index: 10;
+    position: absolute;
+    right: 0px
+}
+.collection{
+	border: 1px solid rgba(229,229,229,1);
+	width:100%;
+	/*height:233px;*/
+	border-radius:2px;
+	margin-top: 10px;
+	padding: 20px;
+}
+.collection p{
+	color: #666;
+}
+.collection p img{
+	margin-right: 10px;
+	
+}
+.collection li{
+    width: 25%;
+    float: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.collection li img{
+	width: 212px;
+	height: 130px;
+	margin-bottom: 5px;
+}
 

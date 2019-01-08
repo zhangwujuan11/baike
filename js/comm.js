@@ -39,7 +39,6 @@ $(document).ready(function () {
 	})
 	
 	//个人中心手风琴菜单
-	$(function() {
 	var Accordion = function(el, multiple) {
 		this.el = el || {};
 		this.multiple = multiple || false;
@@ -61,8 +60,18 @@ $(document).ready(function () {
 //			$(".plus").attr("src","img/personal/icon_plus.png")
 		}
 	}
-	var accordion = new Accordion($('#accordion'), false);
-});
+	var accordion = new Accordion($('.accordion'), false);
+	
+	$(".link").click(function  () {
+		var puls="img/personal/icon_plus.png";
+		if ($(this).find(".plus").attr("src") == puls) {
+			$(this).find(".plus").attr("src","img/personal/icon_jian.png");
+		} else{
+			$(this).find(".plus").attr("src","img/personal/icon_plus.png");
+		}
+	})
+	
+	
         
 });
 
