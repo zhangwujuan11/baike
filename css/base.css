@@ -525,4 +525,11 @@ to {width:83%;}
 .jian{
 	display: none;
 }
-
+.reg-form4 p{
+	position: relative;
+}
+.reg-form4 p img{
+	position: absolute;
+    margin-left: -38px;
+    margin-top: -3px;
+}
