@@ -641,4 +641,57 @@ li.active{
 	border-right: 1px solid #E5E5E5;
 	float: left;
 }
+.needbo{
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(229,229,229,1);
+	border-radius:2px;
+	padding: 30px;
+}
+
+.needbo img{
+	float: left;
+}
+.chan-info{
+	margin-left: 15px;
+	float: left;
+}
+.change-heabtn{
+    background: none;
+    border: none;
+    outline: none;
+    color: #82BE20;
+    position: absolute;
+    margin-top: -20px;
+    z-index: 0;
+}
+#change-heabtn{
+	opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+.needbo .touxia{
+	height: 110px;
+	border-bottom: 1px dashed #E5E5E5;
+}
+.change-info{
+	margin-top: 30px;
+}
+.change-info p span{
+	font-size:14px ;
+	color: #333333;
+	font-weight: 800;
+}
+.change-info input{
+	margin-left: 15px;
+	width:300px;
+	height:36px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(217,217,217,1);
+	border-radius:2px;
+	text-indent: 10px;
+}
+.change-infobtn{
+	width: auto;
+	margin-left:72px;
+}
 
