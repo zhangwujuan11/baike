@@ -479,22 +479,23 @@ to {width:83%;}
  	/*text-align: center;*/
  	float: right;
  }
- .per-comr .per-serch{
- 	width: 100%;
+ .per-serch{
+ 	width: 55%;
  	height: 40px;
  	text-indent: 10px;
  	border:1px solid #E5E5E5;
+ 	margin-left: 100px;
  }
-.per-comr #per-bnt{
+ #per-bnt{
     width: 80px;
     height: 40px;
     background: rgba(255,136,0,1);
     color: white;
     border: none;
-    margin-top: -40px;
+    margin-top: 16px;
     z-index: 10;
     position: absolute;
-    right: 0px
+    line-height: 40px;
 }
 .collection{
 	border: 1px solid rgba(229,229,229,1);
@@ -533,3 +534,111 @@ to {width:83%;}
     margin-left: -38px;
     margin-top: -3px;
 }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #FF8800;
+    cursor: default;
+    background-color: #fff;
+   /* border-bottom: 2px solid #FF8800;*/
+    border-top: 0px;
+    border-left: 0px;
+    }
+li.active{
+	border-bottom: 2px solid #FF8800;
+}
+    
+.nav-tabs>li>a:hover{
+	background: white;
+}
+.nav-tabs>li>a{
+    padding:0;
+    text-align: center;
+    border-right: 1px solid #D8D8D8;
+    border-radius: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    color: #666666;
+}
+.nav-tabs>li{
+    width: 78px;
+    padding: 10px 0;
+}
+#myTabContent>div{
+	padding: 15px 0;
+}
+#myTabContent input{
+	height:40px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(229,229,229,1);
+	border-radius:2px;
+	text-indent: 10px;
+}
+#myTabContent .serb{
+	width: 410px;
+}
+#myTabContent .sers{
+	width: 158px;
+}
+.sers-btn{
+	width:60px;
+}
+#myTabContent table{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+#myTabContent table th{
+	text-align: center;
+	padding: 10px 0;
+	color: #FF8800;
+	font-weight: normal;
+}
+#myTabContent table thead{
+	background: #F8F8F8;
+	margin-bottom: 20px;
+}
+
+.ddu{
+	margin-top:15px;
+	border:1px solid rgba(229,229,229,1);
+	border-radius:2px;
+	width: 100%;
+}
+.ddu .ddl1{
+	background: #F8F8F8;
+	color: #666666;
+	padding-left: 10px;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 6px 0 6px 18px;
+}
+.ddl2,.ddl3,.ddl4,.ddl5,.ddl6,.ddl7{
+	text-align: center;
+	padding: 20px 0;
+}
+.ddu .ddl2{
+	width: 80px;
+	border-right: 1px solid #E5E5E5;
+	float: left;
+}
+.ddu .ddl3{
+	width: 380px;
+	border-right: 1px solid #E5E5E5;
+	float: left;
+}
+.ddu .ddl4{
+	width: 200px;
+	border-right: 1px solid #E5E5E5;
+	float: left;
+}
+.ddu .ddl5{
+	width: 40px;
+	border-right: 1px solid #E5E5E5;
+	float: left;
+}
+
+.ddu .ddl6{
+	width: 99px;
+	border-right: 1px solid #E5E5E5;
+	float: left;
+}
+

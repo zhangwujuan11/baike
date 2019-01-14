@@ -15,9 +15,9 @@
 			<div class="log-box">
 				<img class="choo-tip" src="img/login/buttion_hint.png"/>
 				<img class="choo-way" src="img/login/icon_code.png"/>
-				<form action="" method="post">
+				<form id="form1" action="" method="post">
 					<h3>帐号登陆</h3>
-					<input class="in1" id="phone" type="tel"  placeholder="请输入手机号" />
+					<input class="in1" id="phone" type="tel"  placeholder="请输入手机号"  />
 					<span class="stt"></span>
 					<p class="bb bb1"></p>
 					<input class="in2" type="password" placeholder="请输入密码" />
@@ -51,6 +51,7 @@
 		</main>
 	</body>
 	<script type="text/javascript">
+		
 		$(".in1").focus(function(){
 			$(".bb1").css("animation","mymove 1s forwards");
 		})

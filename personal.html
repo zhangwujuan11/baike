@@ -4,11 +4,15 @@
 		<meta charset="UTF-8">
 		<title>个人中心</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/tntreebox.css"/>
         <link rel="stylesheet" type="text/css" href="css/base.css"/>
         <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/sollup.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<header></header>
@@ -16,6 +20,8 @@
 			<div class="main">
 				<img class="hea-img" src="img/login/LOGO.png"/>
 				<span class="reg-tit"><img src="img/personal/bt.png"/></span>
+				<input type="text" class="per-serch" placeholder="请输入主播名称" />
+				<input type="button" name="per-bnt" id="per-bnt" value="搜索" />
 			</div>
 		</div>
 		<div class="main">
@@ -80,59 +86,327 @@
 				</ul>
 			</div>
 			<div class="per-comr">
-				<input type="text" class="per-serch" placeholder="请输入主播名称" />
-				<input type="button" name="per-bnt" id="per-bnt" value="搜索" />
-				<ul class="collection">
-					<p><img src="img/personal/icon_collect.png"/>收藏的店铺</p>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<ol style="clear: both;"></ol>
+				<ul id="myTab" class="nav nav-tabs">
+				    <li class="active"><a href="#home" data-toggle="tab">所有订单</a></li>
+				    <li><a href="#payment" data-toggle="tab">待付款</a></li>
+				    <li><a href="#paymented" data-toggle="tab">已付款</a></li>
+				    <li><a href="#deliver" data-toggle="tab">已发货</a></li>
+				    <li><a href="#delivered" data-toggle="tab">已发货</a></li>
+				    <li><a href="#cancel" data-toggle="tab">已取消</a></li>
+				    <li><a href="#refund" data-toggle="tab">待退款</a></li>
+				    <li><a href="#refunded" data-toggle="tab">已退款</a></li>
 				</ul>
-				<ul class="collection">
-					<p><img src="img/personal/icon_history.png"/>最近浏览的店铺</p>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<li>
-						<img src="img/imges.png"/>
-						旭旭宝宝的官方店铺
-					</li>
-					<ol style="clear: both;"></ol>
-				</ul>
+				<div id="myTabContent" class="tab-content">
+				    <div class="tab-pane fade in active" id="home">
+				    	<p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">
+				    		-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="payment">
+				        <p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="paymented">
+				    	<p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="deliver">
+				        <p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="delivered">
+				        <p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="cancel">
+				       <p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="refund">
+				        <p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				    <div class="tab-pane fade" id="refunded">
+				        <p class="fl"><input class="serb" id="" value="" placeholder="请输入订单号进行搜索" /></p>
+				    	<p class="fr">成交时间：
+				    		<input class="sers" type="text" placeholder="开始时间" id="start">-
+				    		<input class="sers" type="text" placeholder="结束时间" id="end"/>
+				    		<button class="mainbtn sers-btn">搜索</button>
+				    	</p>
+				    	<table border="0" cellspacing="" cellpadding="">
+				    		<thead>
+				    			<tr>
+					    			<th style="width: 80px;">商品类目</th>
+					    			<th style="width: 380px;">商品名称</th>
+					    			<th style="width: 200px;">单价</th>
+					    			<th style="width: 40px;">数量</th>
+					    			<th style="width: 99px;">付款金额</th>
+					    			<th>交易状态</th>
+					    		</tr>
+				    		</thead>
+				    	</table>
+				    	
+				    	<ul class="ddu">
+				    		<li class="ddl1"><span>2018-08-07</span>&emsp; 订单号: 175178503019915548</li>
+				    		<li class="ddl2">游戏币</li>
+				    		<li class="ddl3">福建一区游戏币安全可靠纯手动产出</li>
+				    		<li class="ddl4">4300万游戏币/100元</li>
+				    		<li class="ddl5">1</li>
+				    		<li class="ddl6">1000.00元</li>
+				    		<li class="ddl7">交易成功</li>
+				    	</ul>
+				    </div>
+				</div>
 			</div>
 			<ol style="clear: both;"></ol>
 		</div>
 		<footer></footer>
 	</body>
+	<script type="text/javascript">
+		$(function(){
+    $("#start").datetimepicker({
+        format:'yyyy-mm-dd',  //格式  如果只有yyyy-mm-dd那就是0000-00-00
+        autoclose:true,//选择后是否自动关闭 
+        minView:2,//最精准的时间选择为日期  0-分 1-时 2-日 3-月
+        language:  'zh-CN', //中文
+        weekStart: 1, //一周从星期几开始
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+       // daysOfWeekDisabled:"1,2,3", //一周的周几不能选 格式为"1,2,3"  数组格式也行
+        todayBtn : true,  //在底部是否显示今天
+        todayHighlight :false, //今天是否高亮显示
+        keyboardNavigation:false, //方向图标改变日期  必须要有img文件夹 里面存放图标
+        showMeridian:false,  //是否出现 上下午
+        initialDate:new Date()
+        //startDate: "2017-01-01" //日期开始时间 也可以是new Date()只能选择以后的时间
+    }).on("changeDate",function(){
+        var start = $("#start").val();
+        $("#end").datetimepicker("setStartDate",start);
+    }); 
+    $("#end").datetimepicker({
+        format:'yyyy-mm-dd',  //格式  如果只有yyyy-mm-dd那就是0000-00-00
+        autoclose:true,//选择后是否自动关闭 
+        minView:2,//最精准的时间选择为日期  0-分 1-时 2-日 3-月
+        language:  'zh-CN', //中文
+        weekStart: 1, //一周从星期几开始
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        //daysOfWeekDisabled:"1,2,3", //一周的周几不能选
+        todayBtn : true,  //在底部是否显示今天
+        todayHighlight :false, //今天是否高亮显示
+        keyboardNavigation:false, //方向图标改变日期  必须要有img文件夹 里面存放图标
+        showMeridian:false  //是否出现 上下午
+       // startDate: "2017-01-01"  //开始时间  ENdDate 结束时间
+    }).on("changeDate",function(){
+        var end = $("#end").val();
+        $("#start").datetimepicker("setEndDate",end);
+    });   
+});
+	</script>
 </html>
