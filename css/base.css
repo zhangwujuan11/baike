@@ -28,6 +28,18 @@ a,a:link,a:visited,a:hover,a:active{
 .maincolor{
 	color: #FF8800;
 }
+#havenone{
+    position: absolute;
+    right: 57%;
+    top: 59px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+}
 
 /*首页*/
 header{
@@ -140,6 +152,42 @@ footer{
 }
 footer span{
 	font-size: 12px;
+}
+ 
+#pu-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 20;
+	display: none;
+}
+#pu-box div{
+	width: 400px;
+	height: 245px;
+	background: white;
+	text-align: center;
+	margin-left: calc(50% - 200px);
+	margin-top: 18%;
+}
+#clos-pu{
+	position: absolute;
+	margin-left: 212px;
+}
+.pu-img{
+	margin-top: 35px;
+	margin-bottom: 16px;
+   0 border-radius: 35px;
+}
+#pu-box .pu-btn{
+	width: 100px;
+	margin-top: 16px;
+}
+#pu-box div span{
+	font-size: 15px;
+	color: #333;
 }
 
 /*登陆页面*/
@@ -370,6 +418,7 @@ to {width:83%;}
  .coml-top img{
  	width: 72px;
  	height: 72px;
+ 	border-radius: 36px;
  }
 .coml-top p{
 	font-size: 14px;
@@ -614,6 +663,9 @@ li.active{
 .ddl2,.ddl3,.ddl4,.ddl5,.ddl6,.ddl7{
 	text-align: center;
 	padding: 20px 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+	text-emphasis: ;
 }
 .ddu .ddl2{
 	width: 80px;
@@ -624,6 +676,7 @@ li.active{
 	width: 380px;
 	border-right: 1px solid #E5E5E5;
 	float: left;
+	text-overflow: ellipsis;
 }
 .ddu .ddl4{
 	width: 200px;
@@ -695,3 +748,300 @@ li.active{
 	margin-left:72px;
 }
 
+/*商品列表*/
+.list-input{
+	width: 619px;
+	height: 36px;
+	border: 2px solid #FF8800;
+	margin-top: 17px;
+    position: relative;
+    z-index:100;
+}
+.list-input li{
+	float: left;
+    height: 32px;
+    border: none;
+    border-right: 1px solid #E5E5E5;
+    color: #666;
+    outline: none;
+    line-height: 32px;
+    padding: 0 23px 0 5px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+}
+.list-input li img{
+    position: absolute;
+    right: 5px;
+    top: 13px;
+}
+#per-bnt2 {
+    width: 80px;
+    height: 32px;
+    background: rgba(255,136,0,1);
+    color: white;
+    border: none;
+    z-index: 10;
+    position: absolute;
+    line-height: 32px;
+}
+#list-inputser{
+	width: 203px;
+	height: 32px;
+	border: none;
+	outline: none;
+	float: left;
+	text-indent: 10px;
+}
+.list-ult{
+	margin: 20px 0;
+}
+
+.list-ult li{
+	float: left;
+	margin-left: 20px;
+}
+.list-ult a{
+	color: #666666;
+	font-size: 16px;
+}
+.list-ult li:hover{
+	color: #FF8800;
+	text-decoration: underline;
+}
+.overline{
+	border-top: 1px solid #E5E5E5;
+	margin: 0;
+	width: 100%;
+}
+.main-buy{
+	margin-top: 20px;
+	border: 1px solid #90CF3C;
+	color: #999999;
+}
+.main-buy th{
+	text-align: center;
+	background: white;
+	border-bottom: 1px dashed #E5E5E5;
+	height: 30px;
+}
+.main-buy td{
+	text-align: center;
+	height: 68px;
+	background: #F9FFF0;
+}
+.main-buy td img{
+	margin-right: 20px;
+}
+.main-buy td input{
+	width:150px;
+	height:36px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(216,216,216,1);
+	border-radius:2px;
+	text-indent: 10px;
+	margin-right: 10px;
+}
+.main-buy button{
+	padding: 7px 14px;
+	color: white;
+	background: #90CF3C;
+	border-radius: 3px;
+	border: none;
+}
+.se-buy{
+	color: #999999;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.se-buy th{
+	background: #F8F8F8;
+	height: 40px;
+}
+.se-buy button{
+	padding: 7px 14px;
+	color: #FF8800;
+	border-radius: 3px;
+	border: 1px solid #FF8800;
+	background: none;
+}
+
+.se-buy td{
+	padding: 10px 0;
+}
+
+.se-buy tbody tr{
+	border-bottom: 1px solid #E5E5E5;
+}
+.list-men{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.5);
+	z-index: 20;
+	display: none;
+}
+.list-men .list-mencon{
+    background: url(../img/shop/kuang.png);
+    width: 1200px;
+    height: 207px;
+    position: absolute;
+    top: 75px;
+    left: -26px;
+}
+.list-men .list-mencon ul{
+	padding:20px 10px 10px 10px;
+}
+.list-men .list-mencon li{
+	float: left;
+	width: 72px;
+	text-align: center;
+	height: 25px;
+	line-height:25px;
+	border-radius: 30px;
+	margin: 5px 9px;
+	cursor: pointer;
+}
+.list-men .list-mencon li:hover{
+	background: #FF8800;
+	color: white;
+}
+.list-mencon button{
+	width: 72px;
+	height: 25px;
+	line-height: 20px;
+	border-radius: 30px;
+	margin: 5px 10px;
+	border: 2px solid #e5e5e5;
+	background: none;
+}
+.list-mencon p{
+	border-bottom: 1px solid #E5E5E5;
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+	display: none;
+}
+#game{
+	width: 113px;
+}
+#place1{
+	width: 71px;
+}
+#place2{
+	width: 78.8px;
+}
+#currency{
+	width: 71px;
+}
+.list-topcon .change-way{
+	height: 40px;
+	line-height: 40px;
+	color: #82BE20;
+	margin: 0;
+}
+.list-topcon .change-way img{
+	margin-right: 8px;
+	cursor: pointer;
+}
+.list-topcon .change-way span{
+	cursor: pointer;
+}
+.list-topcon table{
+	float: left;
+	width: calc(100% / 3);
+	border: 1px solid rgba(229,229,229,1);
+	border-right: none;
+	margin-bottom: 10px;
+}
+.list-topcon table td,.list-topcon table th{
+	border: none;
+	height: 30px;
+	padding-left: 20px;
+}
+.list-topcon table th{
+	border-bottom: 1px solid rgba(229,229,229,1);
+	background: #f8f8f8;
+	font-size: 14px;
+	color: #999999;
+	font-weight: normal;
+}
+.list-topcon table td{
+	border-bottom: 1px dashed rgba(229,229,229,1);
+}
+.list-topcon table:last-of-type{
+	border-right: 1px solid #e5e5e5;
+}
+.list-topcon table tr{
+	cursor: pointer;
+}
+#second-class li{
+	width: 80px;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	float: left;
+}
+#second-class{
+	width:100%;
+	height: 70px;
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+#second-class .second-class1{
+	width: 65px;
+	height: 68px;
+	background: #f8f8f8;
+	line-height: 68px;
+}
+#second-class li{
+	cursor: pointer;
+}
+#thr-class li{
+	width: 80px;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	float: left;
+}
+#thr-class{
+	width:100%;
+	height: 100px;
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+	margin-bottom: 20px;
+	display: none;
+}
+
+#thr-class .thr-class1{
+	width: 65px;
+	height: 102px;
+	background: #f8f8f8;
+	line-height: 102px;
+}
+
+#four-class li{
+	width: 80px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+#four-class{
+	width:100%;
+	height: 40px;
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+	margin-bottom: 20px;
+	display: none;
+}
+
+#four-class .four-class1{
+	width: 65px;
+	height: 40px;
+	background: #f8f8f8;
+	line-height: 40px;
+}

@@ -90,16 +90,25 @@
         	<!--搜索框-->
         	<form action="" id="serchpu">
 				<input type="" name=""  value="" placeholder="请输入主播名称" />
-				<button>搜索</button>
+				<p id="havenone" style="top: 102%;">没有搜索到相关主播</p>
+				<button class="serchpu">搜索</button>
 			</form>
         </div>
         
-        
+        <div id="pu-box">
+			<div>
+				<img id="clos-pu" src="img/icon_offb.png"/>
+				<img class="pu-img" src="img/personal/touxi.png"/><br />
+				<span>buibuipui</span>
+				<p><button class="mainbtn pu-btn">进入店铺</button></p>
+			</div>
+		</div>
         
         
  
     </body>
     <script>
+    	$("#pu-box").css("display","none");
         $('.carousel').carousel({
             interval: 3000
         })
@@ -107,6 +116,20 @@
             pause: true,
             interval: false
         });
+        
+        //店铺搜索朦尘
+		$(".serchpu").click(function  () {
+			$("#pu-box").css("display","block");
+		})
+		
+		$("#clos-pu").click(function  () {
+			$("#pu-box").css("display","none");
+		})
+				
+		//没有搜索到相关主播
+		setTimeout(function(){ 
+			$("#havenone").fadeOut();
+		}, 2000);
     </script>
  
 </html>

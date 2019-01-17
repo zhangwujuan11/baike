@@ -75,8 +75,103 @@ $(document).ready(function () {
 		}
 	})
 	
+	//没有搜索到相关主播
+	setTimeout(function(){ 
+		$("#havenone").fadeOut();
+	}, 2000);
 	
-        
+	//商品列表搜索栏
+	$(".list-menclose").click(function  () {
+		$(".list-men").hide()
+	})
+	
+	
+	$("#game").click(function  () {
+		$(".list-men").show(function(){
+			$(".list-mencon li").click(function  () {
+			var tex=$(this).html();
+			$("#game").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
+			$(".list-men").hide()
+			})
+		}
+			
+		)
+	})
+	
+	$("#place1").click(function  () {
+		$(".list-mencon p").show();
+		$(".list-men .list-mencon ul").css("padding","10px");
+		$(".list-men .list-mencon").css("left","60px");
+		$(".list-men").show(function(){
+			$(".list-mencon li").click(function  () {
+			var tex=$(this).html();
+			$("#place1").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
+			$(".list-men").hide()
+			})
+		}
+			
+		)
+	})
+	
+	$("#place2").click(function  () {
+		$(".list-men .list-mencon").css("left","130px");
+		$(".list-men").show(function(){
+			$(".list-mencon li").click(function  () {
+			var tex=$(this).html();
+			$("#place2").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
+			$(".list-men").hide()
+			})
+		}
+			
+		)
+	})
+	
+	$("#currency").click(function  () {
+		$(".list-men .list-mencon").css("left","203px");
+		$(".list-men").show(function(){
+			$(".list-mencon li").click(function  () {
+			var tex=$(this).html();
+			$("#currency").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
+			$(".list-men").hide()
+			})
+		}
+			
+		)
+	})
+	
+	
+	$(".list-topcon table tbody tr").click(function  () {
+		$(this).css({"background":"#FF8800","color":"white"});
+	    $(this).find(".maincolor").css({"color":"white"});
+	    $(this).siblings().css({"background":"white","color":"black"});
+	    $(this).siblings().find(".maincolor").css({"color":"#FF8800"});
+	    $(this).parents().siblings().find("tbody tr").css({"background":"white","color":"black"});
+	    $(this).parents().siblings().find("tbody tr .maincolor").css({"color":"#FF8800"});
+	})
+	
+	$("#second-class li:not(.second-class1)").click(function  () {
+		$(this).css({"color":"#FF8800","text-decoration":"underline"});
+		$(this).siblings().css({"color":"black","text-decoration":"none"})
+	})
+	
+	$(".list-topcon img,.list-topcon span").click(function  () {
+		var kuaqu="按区服筛选";
+		var kuwhat=$(".list-topcon span").html()
+		if (kuwhat == kuaqu) {
+			$(".list-topcon span").html("按跨区筛选");
+			$("#thr-class").show();
+			$("#four-class").show();
+			$("#second-class").hide();
+			$(".list-topcon table").hide();
+		} else{
+			$(".list-topcon span").html("按区服筛选");
+			$("#thr-class").hide();
+			$("#four-class").hide();
+			$("#second-class").show();
+			$(".list-topcon table").show();
+		}
+	})
+	
 });
 
 
