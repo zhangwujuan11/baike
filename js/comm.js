@@ -194,6 +194,27 @@ $(document).ready(function () {
 		$(this).siblings().css({"color":"black","text-decoration":"none"})
 	})
 	
+	//确认订单
+	$("#jianinpu").click(function  () {
+		var shonum=$("#show-numinpu").html();
+		if (shonum > 1) {
+			shonum-=1
+			$("#jianinpu").css("opacity","1")
+			$("#show-numinpu").html(shonum);
+		} else{
+			$("#show-numinpu").html("1");
+			console.log(1212);
+			$("#jianinpu").css("opacity","0.5")
+		}
+	})
+	$("#jiainpu").click(function  () {
+		var shonwum=$("#show-numinpu").html();
+		if (shonwum > 1) {
+			shonwum+=1
+			$("#show-numinpu").html(shonwum);
+		}
+	})
+	
 });
 
 

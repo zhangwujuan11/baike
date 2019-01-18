@@ -179,7 +179,7 @@ footer span{
 .pu-img{
 	margin-top: 35px;
 	margin-bottom: 16px;
-   0 border-radius: 35px;
+    border-radius: 35px;
 }
 #pu-box .pu-btn{
 	width: 100px;
@@ -854,6 +854,9 @@ li.active{
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
+.se-buy tr td:first-child{
+	color: black;
+}
 
 .se-buy th{
 	background: #F8F8F8;
@@ -1052,4 +1055,89 @@ li.active{
 }
 .list-mencon p button{
 	outline: none;
+}
+#thr-class li,#four-class li{
+	cursor: pointer;
+}
+
+/*确认订单*/
+.order-way{
+	position: absolute;
+	right: 0px;
+	margin-top: 10px;
+}
+.dete-con h5{
+	font-size: 16px;
+	color: #666;
+	border-left: 4px solid #ff8800;
+	padding-left: 20px;
+	border-radius: 3px;
+	margin-top: 30px;
+}
+.dete-con p{
+	color: #333;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+}
+.dete-con p input{
+	width:300px;
+	height:36px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(217,217,217,1);
+	border-radius:2px;
+	text-indent: 10px;
+}
+.dete-con p span{
+	display: block;
+	float: left;
+	width: 72px;
+	text-align: center;
+	margin-right: 5px;
+}
+.dete-con table{
+	width: 100%;
+}
+
+.dete-con table th{
+	height: 45px;
+	line-height: 45px;
+	color: #999999;
+	font-size: 14px;
+	border-bottom: 1px solid #E5E5E5;
+	font-weight: normal;
+	text-align: center;
+}
+.dete-con table th:first-child{
+	text-indent: 140px;
+	text-align: left;
+}
+.dete-con table td{
+	height: 100px;
+	line-height: 100px;
+	background: #FAFAFA;
+	text-align: center;
+}
+.dete-con table td:first-child{
+	text-indent: 60px;
+	text-align: left;
+}
+.dete-con table td:last-child{
+	font-weight: 800;
+}
+.dete-con table td span{
+	display: block;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.dete-con table td img{
+	height: 26px;
+	margin-top: -2px;
+}
+.dete-con table td #show-numinpu{
+	width: 46px;
+	border: 1px solid rgba(216,216,216,1);
+	text-align: center;
+	background: white;
 }
