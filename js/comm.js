@@ -82,11 +82,18 @@ $(document).ready(function () {
 	
 	//商品列表搜索栏
 	$(".list-menclose").click(function  () {
-		$(".list-men").hide()
+		$(".list-men").hide();
 	})
 	
+	$(".list-men").click(function  (e) {
+		 if($(e.target).attr('class')!='list-mencon'){
+    		$(".list-men").hide();
+      }
+	})
+		
 	
 	$("#game").click(function  () {
+		$(".list-men .list-mencon").css("left","-26px");
 		$(".list-men").show(function(){
 			$(".list-mencon li").click(function  () {
 			var tex=$(this).html();
