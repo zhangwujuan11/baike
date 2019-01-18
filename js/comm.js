@@ -201,19 +201,31 @@ $(document).ready(function () {
 			shonum-=1
 			$("#jianinpu").css("opacity","1")
 			$("#show-numinpu").html(shonum);
+			var a= parseInt($("#price").html());
+			var b= parseInt($("#show-numinpu").html());
+			var c=a*b;
+			$("#tognum, .tognum").html(c.toFixed(2));
+			
 		} else{
 			$("#show-numinpu").html("1");
-			console.log(1212);
-			$("#jianinpu").css("opacity","0.5")
+			$("#jianinpu").css("opacity","0.5");
 		}
 	})
 	$("#jiainpu").click(function  () {
-		var shonwum=$("#show-numinpu").html();
-		if (shonwum > 1) {
-			shonwum+=1
+		var shonwum=parseInt($("#show-numinpu").html())
+			shonwum=shonwum+1
 			$("#show-numinpu").html(shonwum);
-		}
+			$("#jianinpu").css("opacity","1");
+			var a= parseInt($("#price").html());
+			var b= parseInt($("#show-numinpu").html());
+			var c=a*b;
+			$("#tognum, .tognum").html(c.toFixed(2));
 	})
+	
+	var a= parseInt($("#price").html());
+	var b= parseInt($("#show-numinpu").html());
+	var c=a*b;
+	$("#tognum, .tognum").html(c.toFixed(2));
 	
 });
 

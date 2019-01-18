@@ -1,6 +1,7 @@
 body,html{
 	width: 100%;
 	margin: 0;
+	height: 100%;
 }
 ul,li{
 	list-style: none;
@@ -10,6 +11,10 @@ ul,li{
 a,a:link,a:visited,a:hover,a:active{
 	text-decoration: none;
 	color:#999;
+}
+footer{
+	position: absolute;
+	bottom: 0px;
 }
 
 .fl{
@@ -27,6 +32,12 @@ a,a:link,a:visited,a:hover,a:active{
 
 .maincolor{
 	color: #FF8800;
+}
+.grcolor{
+	color: #80BE20;
+}
+.wei{
+	font-weight: 800;
 }
 #havenone{
     position: absolute;
@@ -930,15 +941,19 @@ li.active{
 }
 #game{
 	width: 113px;
+	overflow: hidden;
 }
 #place1{
 	width: 71px;
+	overflow: hidden;
 }
 #place2{
-	width: 78.8px;
+	width: 79.8px;
+	overflow: hidden;
 }
 #currency{
 	width: 71px;
+	overflow: hidden;
 }
 .list-topcon .change-way{
 	height: 40px;
@@ -1140,4 +1155,76 @@ li.active{
 	border: 1px solid rgba(216,216,216,1);
 	text-align: center;
 	background: white;
+}
+.dete-con .togrther{
+	height: 40px;
+	background: #FCFDE6;
+	text-align: right;
+	color: #666;
+	font-size: 14px;
+	line-height: 40px;
+}
+.dete-con .togrther span:first-child{
+	color: #80BE20;
+}
+.dete-con .togrther .tognum{
+	color: #ff8800;
+	font-size: 24px;
+	font-weight: 800;
+}
+.dete-con .togrther button{
+	width: 120px;
+	margin-left: 20px;
+}
+.orsecon h3 p{
+	float: left;
+	padding-right: 20px;
+	border-right: 1px solid #e5e5e5;
+}
+.orsecon .nebig{
+	font-size: 18px;
+	font-weight: 800;
+}
+.orsecon .nesma{
+	font-size: 14px;
+	color: #888888;
+}
+.orsecon h3 .orsecon2p{
+	border: none;
+	padding-left: 20px;
+	margin-top: -11px;
+}
+.orsecon h3{
+	border-bottom: 1px dashed #e5e5e5;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+.orsecon>p{
+	height: 30px;
+	line-height: 30px;
+}
+.order-tab{
+	padding-left: 10px;
+}
+.order-tab li{
+	border-right: none;
+}
+.order-tab li a{
+	border: none !important;
+}
+#weixin,#zhi{
+	height: 295px;
+	background: #f8f8f8;
+	text-align: center;
+}
+#weixin img,#zhi img{
+	margin: 10px 0 20px 0;
+}
+.orthcon{
+	text-align: center;
+}
+.orthcon h3 span{
+	border-right: 1px solid #e5e5e5;
+	padding-right: 10px;
+	margin-right: 5px;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>确认订单</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tntreebox.css"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css"/>
+        <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/sollup.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="regist-header">
+			<div class="main">
+				<img class="hea-img" src="img/login/LOGO.png"/>
+				<img class="order-way" src="img/order/time2.png"/>
+			</div>
+		</div>
+		<div class="main orsecon">
+			<h3>
+				<p><img src="img/order/icon_time.png"/></p>
+				<p class="orsecon2p">
+					<span class="nebig">您已成功提交订单，请您尽快完成付款！</span><br />
+					<span class="nesma">请您在提交订单后30分钟内完成支付，否则订单会自动取消哦！</span>
+				</p>
+				<ol style="clear: both;"></ol>
+			</h3>
+			
+			<p>订单号：OD2018112192420429</p>
+			<p>下单时间：2018-11-05 15：32</p>
+			<p>单价：<span class="maincolor">43万游戏币 / 元</span></p>
+			<p>数 量：270</p>
+			<p>实付金额：<span class="maincolor wei">2700.00</span></p>
+			
+			<ul id="myTab" class="nav nav-tabs order-tab">
+			    <li class="active"><a href="#weixin" data-toggle="tab">微信支付</a></li>
+			    <li><a href="#zhi" data-toggle="tab">支付宝</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade in active" id="weixin">
+					<img src="img/login/RichScan.png"/><br />
+					<span class="grcolor">请使用微信扫描二维码完成支付</span>
+				</div>
+				<div class="tab-pane fade in" id="zhi">
+					<img src="img/login/RichScan.png"/><br />
+					<span class="grcolor">请使用支付宝扫描二维码完成支付</span>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
