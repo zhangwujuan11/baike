@@ -85,10 +85,16 @@ $(document).ready(function () {
 		$(".list-men").hide();
 	})
 	
-	$(".list-men").click(function  (e) {
-		 if($(e.target).attr('class')!='list-mencon'){
-    		$(".list-men").hide();
-      }
+	$(".list-men").click(function(e) {
+		if (!$(e.target).is(".list-mencon, .list-mencon ul, .list-mencon>p,  .list-mencon p button")) {
+			$(".list-men").hide();
+		}
+	})
+	
+	$(".list-mencon p button").click(function  () {
+		$(this).addClass("current");
+		$(this).siblings().removeClass("current");
+		$(".list-men").show()
 	})
 		
 	
@@ -177,6 +183,15 @@ $(document).ready(function () {
 			$("#second-class").show();
 			$(".list-topcon table").show();
 		}
+	})
+	
+	$("#thr-class li").not(".thr-class1").click(function  () {
+		$(this).css({"color":"#FF8800","text-decoration":"underline"})
+		$(this).siblings().css({"color":"black","text-decoration":"none"})
+	})
+	$("#four-class li").not(".four-class1").click(function  () {
+		$(this).css({"color":"#FF8800","text-decoration":"underline"})
+		$(this).siblings().css({"color":"black","text-decoration":"none"})
 	})
 	
 });
