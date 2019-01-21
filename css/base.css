@@ -1228,3 +1228,25 @@ li.active{
 	padding-right: 10px;
 	margin-right: 5px;
 }
+.orthitc{
+	width: 100%;
+	padding-left: calc(50% - 215px);
+	margin-top: 50px;
+}
+.orthitc ul{
+	width: 430px;
+	text-align: left;
+	margin-bottom: 50px;
+}
+.orthitc ul li{
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+}
+.orthitc ul span{
+	float: right;
+}
+.orthcon a{
+	color: #80BE20;
+	border-bottom: 1px solid #80BE20;
+}
