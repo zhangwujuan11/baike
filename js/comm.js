@@ -196,34 +196,41 @@ $(document).ready(function () {
 	
 	//确认订单
 	$("#jianinpu").click(function  () {
-		var shonum=$("#show-numinpu").html();
+		var shonum=$("#show-numinpu").val();
 		if (shonum > 1) {
 			shonum-=1
 			$("#jianinpu").css("opacity","1")
-			$("#show-numinpu").html(shonum);
+			$("#show-numinpu").val(shonum);
 			var a= parseInt($("#price").html());
-			var b= parseInt($("#show-numinpu").html());
+			var b= parseInt($("#show-numinpu").val());
 			var c=a*b;
 			$("#tognum, .tognum").html(c.toFixed(2));
 			
 		} else{
-			$("#show-numinpu").html("1");
+			$("#show-numinpu").val(1);
 			$("#jianinpu").css("opacity","0.5");
 		}
 	})
 	$("#jiainpu").click(function  () {
-		var shonwum=parseInt($("#show-numinpu").html())
+		var shonwum=parseInt($("#show-numinpu").val())
 			shonwum=shonwum+1
-			$("#show-numinpu").html(shonwum);
+			$("#show-numinpu").val(shonwum);
 			$("#jianinpu").css("opacity","1");
 			var a= parseInt($("#price").html());
-			var b= parseInt($("#show-numinpu").html());
+			var b= parseInt($("#show-numinpu").val());
 			var c=a*b;
 			$("#tognum, .tognum").html(c.toFixed(2));
 	})
 	
+	$("#show-numinpu").change(function  () {
+		var a= parseInt($("#price").html());
+		var b= parseInt($("#show-numinpu").val());
+		var c=a*b;
+		$("#tognum, .tognum").html(c.toFixed(2));
+	})
+	
 	var a= parseInt($("#price").html());
-	var b= parseInt($("#show-numinpu").html());
+	var b= parseInt($("#show-numinpu").val());
 	var c=a*b;
 	$("#tognum, .tognum").html(c.toFixed(2));
 	

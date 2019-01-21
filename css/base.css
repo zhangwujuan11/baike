@@ -1156,6 +1156,8 @@ li.active{
 	border: 1px solid rgba(216,216,216,1);
 	text-align: center;
 	background: white;
+	height: 26px;
+	float: left;
 }
 .dete-con .togrther{
 	height: 40px;
