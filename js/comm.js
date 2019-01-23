@@ -99,6 +99,7 @@ $(document).ready(function () {
 		
 	
 	$("#game").click(function  () {
+		$(".list-mencon p").hide();
 		$(".list-men .list-mencon").css("left","-26px");
 		$(".list-men").show(function(){
 			$(".list-mencon li").click(function  () {
@@ -127,6 +128,7 @@ $(document).ready(function () {
 	})
 	
 	$("#place2").click(function  () {
+		$(".list-mencon p").hide();
 		$(".list-men .list-mencon").css("left","130px");
 		$(".list-men").show(function(){
 			$(".list-mencon li").click(function  () {
@@ -140,6 +142,7 @@ $(document).ready(function () {
 	})
 	
 	$("#currency").click(function  () {
+		$(".list-mencon p").hide();
 		$(".list-men .list-mencon").css("left","203px");
 		$(".list-men").show(function(){
 			$(".list-mencon li").click(function  () {

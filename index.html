@@ -60,7 +60,7 @@
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="position:fixed;top:0px;height: 100%;width:100%;">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="img/background.png">
+                    <img src="img/background.jpg">
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
         	<form action="" id="serchpu">
 				<input type="" name=""  value="" placeholder="请输入主播名称" />
 				<p id="havenone" style="top: 102%;">没有搜索到相关主播</p>
-				<input type="button" class="serchpu" value="搜索">
+				<input type="button" id="add" class="serchpu" value="搜索">
 			</form>
         </div>
         
@@ -119,7 +119,6 @@
         
         //店铺搜索朦尘
 		$(".serchpu").click(function () {
-			console.log(222)
 			$("#pu-box").css("display","block");
 		})
 		
@@ -130,6 +129,15 @@
 		setTimeout(function(){ 
 			$("#havenone").fadeOut();
 		}, 2000);
+		
+		
+		
+		 $(document).keydown(function(e) {
+    		if (e.keyCode == 13) {
+      			$("#pu-box").css("display","block");
+    		};
+  	});
+
     </script>
  
 </html>
