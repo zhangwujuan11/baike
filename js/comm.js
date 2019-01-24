@@ -91,7 +91,7 @@ $(document).ready(function () {
 		}
 	})
 	
-	$(".list-mencon p button").click(function  () {
+	$(".list-mencon2 p button").click(function  () {
 		$(this).addClass("current");
 		$(this).siblings().removeClass("current");
 		$(".list-men").show()
@@ -99,10 +99,11 @@ $(document).ready(function () {
 		
 	
 	$("#game").click(function  () {
-		$(".list-mencon p").hide();
-		$(".list-men .list-mencon").css("left","-26px");
+		$(".list-men .list-mencon1").css("left","-26px");
+		$(".list-mencon1").show()
+		$(".list-mencon2,.list-mencon3,.list-mencon4").hide()
 		$(".list-men").show(function(){
-			$(".list-mencon li").click(function  () {
+			$(".list-mencon1 li").click(function  () {
 			var tex=$(this).html();
 			$("#game").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
 			$(".list-men").hide()
@@ -113,11 +114,13 @@ $(document).ready(function () {
 	})
 	
 	$("#place1").click(function  () {
-		$(".list-mencon p").show();
-		$(".list-men .list-mencon ul").css("padding","10px");
-		$(".list-men .list-mencon").css("left","60px");
+		$(".list-mencon2 p").show();
+		$(".list-mencon2").show()
+		$(".list-mencon1,.list-mencon3,.list-mencon4").hide()
+		$(".list-men .list-mencon2 ul").css("padding","10px");
+		$(".list-men .list-mencon2").css("left","60px");
 		$(".list-men").show(function(){
-			$(".list-mencon li").click(function  () {
+			$(".list-mencon2 li").click(function  () {
 			var tex=$(this).html();
 			$("#place1").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
 			$(".list-men").hide()
@@ -128,10 +131,11 @@ $(document).ready(function () {
 	})
 	
 	$("#place2").click(function  () {
-		$(".list-mencon p").hide();
-		$(".list-men .list-mencon").css("left","130px");
+		$(".list-men .list-mencon3").css("left","130px");
+		$(".list-mencon3").show()
+		$(".list-mencon1,.list-mencon4,.list-mencon2").hide()
 		$(".list-men").show(function(){
-			$(".list-mencon li").click(function  () {
+			$(".list-mencon3 li").click(function  () {
 			var tex=$(this).html();
 			$("#place2").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
 			$(".list-men").hide()
@@ -142,10 +146,11 @@ $(document).ready(function () {
 	})
 	
 	$("#currency").click(function  () {
-		$(".list-mencon p").hide();
-		$(".list-men .list-mencon").css("left","203px");
+		$(".list-men .list-mencon4").css("left","203px");
+		$(".list-mencon4").show()
+		$(".list-mencon1,.list-mencon3,.list-mencon2").hide()
 		$(".list-men").show(function(){
-			$(".list-mencon li").click(function  () {
+			$(".list-mencon4 li").click(function  () {
 			var tex=$(this).html();
 			$("#currency").html(tex+'<img src="img/shop/icon_down.png" alt="" />');
 			$(".list-men").hide()

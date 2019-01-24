@@ -2,7 +2,10 @@ body,html{
 	width: 100%;
 	margin: 0;
 	height: 100%;
+	position: relative;
 }
+
+
 ul,li{
 	list-style: none;
 	padding: 0;
@@ -200,6 +203,12 @@ footer span{
 #pu-box div span{
 	font-size: 15px;
 	color: #333;
+}
+@media screen and (min-height:950px){
+	body,html{height: auto;}
+	footer{
+		bottom: -150px;
+	}
 }
 
 /*登陆页面*/
