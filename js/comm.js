@@ -3,6 +3,15 @@ $(document).ready(function () {
         $('header').load('top.html');
         $('footer').load('footer.html');
         
+        var bhei= $("body").height();
+       if(bhei>=950){
+       	$("body,html").css("height","auto");
+       	$("footer").css("bottom","-150px");
+       }else{
+       	$("body,html").css("height","100%");
+       		$("footer").css("bottom","0");
+       }
+        
     //首页导航
     $(".root li").click(function(){
 		$(".tntreebox").css("background","rgba(0,0,0,0.5)")

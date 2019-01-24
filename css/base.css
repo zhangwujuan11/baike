@@ -1,7 +1,7 @@
 body,html{
 	width: 100%;
 	margin: 0;
-	height: 100%;
+	
 	position: relative;
 }
 
@@ -204,12 +204,7 @@ footer span{
 	font-size: 15px;
 	color: #333;
 }
-@media screen and (min-height:950px){
-	body,html{height: auto;}
-	footer{
-		bottom: -150px;
-	}
-}
+
 
 /*登陆页面*/
 .log-b{
