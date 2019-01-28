@@ -38,18 +38,46 @@
 			<p>数 量：270</p>
 			<p>实付金额：<span class="maincolor wei">2700.00</span></p>
 			
-			<ul id="myTab" class="nav nav-tabs order-tab">
-			    <li class="active"><a href="#weixin" data-toggle="tab">微信支付</a></li>
-			    <li><a href="index.html">支付宝</a></li>
+			<ul id="myTab">
+				<p class="tip">选择以下支付方式</p>
+			    <li><img class="weixinpay" src="img/order/weixinpay.png"/></li>
+			    <li><img class="payOnline_zfb" src="img/order/payOnline_zfb.png"/></li>
 			</ul>
-			<div id="myTabContent" class="tab-content">
-				<div class="tab-pane fade in active" id="weixin">
-					<img src="img/login/RichScan.png"/><br />
-					<span class="grcolor">请使用微信扫描二维码完成支付</span>
-				</div>
-				
+		</div>
+		<div id="weixin">
+			<div class="weixincon">
+				<p>微信支付<img src="img/icon_offb.png"/></p>
+				<img src="img/login/RichScan.png"/>
+				<h5>
+					使用<span class="maincolor">微信</span>扫一扫<br />
+					二维码完成支付
+				</h5>
+			</div>
+		</div>
+		<div id="payOnline">
+			<div class="payOnlinecon">
+				<p>支付宝支付<img src="img/icon_offb.png"/></p>
+				<img src="img/login/RichScan.png"/>
+				<h5>
+					使用<span class="maincolor">支付宝</span>扫一扫<br />
+					二维码完成支付
+				</h5>
 			</div>
 		</div>
 		<footer></footer>
 	</body>
+	<script type="text/javascript">
+		$("#weixin .weixincon p img").click(function  () {
+			$("#weixin").hide();
+		})
+		$(".weixinpay").click(function(){
+			$("#weixin").show()
+		})
+		$("#payOnline .payOnlinecon p img").click(function  () {
+			$("#payOnline").hide();
+		})
+		$(".payOnline_zfb").click(function(){
+			$("#payOnline").show()
+		})
+	</script>
 </html>

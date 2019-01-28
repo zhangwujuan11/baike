@@ -130,6 +130,7 @@ $(document).ready(function () {
 	var c=a*b;
 	$("#tognum, .tognum").html(c.toFixed(2));
 	
+	
 });
 
 
