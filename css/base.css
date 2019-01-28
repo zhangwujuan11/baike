@@ -1288,9 +1288,6 @@ to {width:83%;}
 	display: none;
 	z-index: 1000;
 }
-.payOnlinecon{
-	text-align: center;
-}
 #myTab li img{
 	border: 1px solid #e5e5e5;
 }
@@ -1321,6 +1318,27 @@ to {width:83%;}
 	margin-top: 10px;
 }
 #weixin .weixincon>img,#payOnline .payOnlinecon>img{
-	margin-top: 40px;
+	margin-top: 80px;
 	margin-bottom: 30px;
+}
+
+#payOnline .payOnlinecon{
+	width: 496px;
+}
+#payOnline .fr{
+	font-size: 16px;
+	color: #757575;
+	width: 220px;
+	margin-top: 60px;
+	line-height: 35px;
+	padding-right: 55px;
+}
+#payOnline .fr h4{
+	line-height: 35px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 16px;
+}
+#payOnline .fr a{
+	font-size: 14px;
+	color: #FF8400;
 }
