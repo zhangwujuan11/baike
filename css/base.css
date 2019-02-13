@@ -118,8 +118,7 @@ header #loginout{
 	color: #333333;
 }
 .topserch li:nth-child(1){
-	padding-right: 15px;
-	border-right: 1px solid #E5E5E5;
+	padding-right: 8px;
 }
 .topserch li:nth-child(2){
 	padding-left: 15px;
@@ -130,6 +129,7 @@ header #loginout{
 }
 .buislogo{
 	margin: 20px 0;
+	height: 36px;
 }
 .glyphicon{
 	top: calc(50% - 35px);
@@ -350,7 +350,7 @@ to {width:83%;}
 	color: #333;
 	/*float: left;*/
 	padding-left: 20px;
-	border-left: 1px solid #E5E5E5;
+	/*border-left: 1px solid #E5E5E5;*/
 	margin: 0;
 }
 .reg-con{

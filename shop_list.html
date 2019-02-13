@@ -60,7 +60,7 @@
 								<button>按跨区</button>
 							</p>
 							<ul>
-								<li>广东区</li>
+								<li>广东2</li>
 								<li>广东区</li>
 								<li>广东区</li>
 								<li>广东区</li>
@@ -82,7 +82,7 @@
 								<button>按跨区</button>
 							</p>
 							<ul>
-								<li>广东区</li>
+								<li>广东3</li>
 								<li>广东区</li>
 								<li>广东区</li>
 								<li>广东区</li>
@@ -104,7 +104,7 @@
 								<button>按跨区</button>
 							</p>
 							<ul>
-								<li>广东区</li>
+								<li>广东5</li>
 								<li>广东区</li>
 								<li>广东区</li>
 								<li>广东区</li>
@@ -380,13 +380,22 @@
 		<footer></footer>
 		<script type="text/javascript">
 			$(".list-menclose").click(function  () {
-   $(".list-men").hide();
-});
+			   $(".list-men").hide();
+			});
 
 $(".list-men").click(function(e) {
-   if (!$(e.target).is(".list-mencon, .list-mencon ul, .list-mencon>p,  .list-mencon p button")) {
-      $(".list-men").hide();
-   }
+	if ($(e.target).is(".list-mencon, .list-mencon ul li, .list-mencon>p,  .list-mencon p button")) {
+   		if(!$(e.target).is(".list-mencon4, .list-mencon4>p,  .list-mencon4 p button")) {
+			$(this).show();
+   			console.log(222)
+   		} else {
+   			$(this).hide();
+   			console.log(333)
+   			
+   		}
+	} else {
+		$(this).hide();
+	}
 });
 
 $(".list-mencon p button").click(function  () {
@@ -401,14 +410,46 @@ $("#game").click(function  () {
    $(".list-mencon2,.list-mencon3,.list-mencon4").hide()
    $(".list-men").show(function(){
             $(".list-mencon1 li").click(function  () {
-               var tex=$(this).html();
-               $("#game").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
-               $(".list-men").hide()
+              	 $(".list-mencon2").show();
+              	 $(".list-mencon1,.list-mencon3,.list-mencon4").hide();
+          		 $(".list-men .list-mencon2 ul").css("padding","10px");
+   				 $(".list-men .list-mencon2").css("left","60px");
+   				  $(".list-mencon2 li").click(function  () {
+   				  	var tex=$(this).html();
+	                $("#place2").html('请选择服务器<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+	               	$("#place1").html(tex+'<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+   				  	$(".list-men .list-mencon3").css("left","130px");
+			   		$(".list-mencon3").show();
+			   		$(".list-mencon1,.list-mencon4,.list-mencon2").hide();
+			   		$(".list-mencon3 li").click(function  () {
+			   			var tex=$(this).html();
+           				$("#place2").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+			   			$(".list-men .list-mencon4").css("left","203px");
+					    $(".list-mencon4").show();
+					    $(".list-mencon1,.list-mencon3,.list-mencon2").hide();
+					    $(".list-mencon4 li").click(function  () {
+					    	var tex=$(this).html();
+                    		$("#currency").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+					    	$(".list-men").hide();
+					    })
+			   		})
+   				  })
+                 var tex=$(this).html();
+                 $("#game").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+               
+               
             })
          }
-
    )
+   
 })
+
+
+
+
+
+
+
 
 $("#place1").click(function  () {
    $(".list-mencon2").show();
@@ -418,9 +459,9 @@ $("#place1").click(function  () {
    $(".list-men").show(function(){
             $(".list-mencon2 li").click(function  () {
                var tex=$(this).html();
-               $("#place2").html('请选择服务器< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
-               $("#place1").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
-               $(".list-men").hide()
+               $("#place2").html('请选择服务器<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+               $("#place1").html(tex+'<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+               $(".list-men").hide();
             })
          }
 
@@ -435,7 +476,7 @@ $("#place2").click(function  () {
             $(".list-mencon3 li").click(function  () {
                var tex=$(this).html();
                $("#place2").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
-               $(".list-men").hide()
+               $(".list-men").hide();
             })
          }
 
@@ -449,7 +490,7 @@ $("#currency").click(function  () {
                 $(".list-mencon4 li").click(function  () {
                     var tex=$(this).html();
                     $("#currency").html(tex+'< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
-                    $(".list-men").hide()
+                    $(".list-men").hide();
                 })
             }
 

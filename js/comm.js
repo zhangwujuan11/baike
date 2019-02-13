@@ -1,12 +1,12 @@
 $(document).ready(function () {
 	//头尾公共提取
-       $('header').load('top.html');
-        $('footer').load('footer.html');
+       $('header').load('common/top.html');
+        $('footer').load('common/footer.html');
 
        var bhei= $("body").height();
        var pp=window.screen.availHeight;
-       console.log(pp)
-        console.log(bhei)
+//     console.log(pp)
+//      console.log(bhei)
        if(bhei>=pp){
        	$("body,html").css("height","auto");
        	$("footer").css("bottom","-150px");
