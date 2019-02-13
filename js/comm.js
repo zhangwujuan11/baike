@@ -1,10 +1,13 @@
 $(document).ready(function () {
 	//头尾公共提取
-        $('header').load('/common/top.html');
-        $('footer').load('/common/footer.html');
+       $('header').load('top.html');
+        $('footer').load('footer.html');
 
-        var bhei= $("body").height();
-       if(bhei>=950){
+       var bhei= $("body").height();
+       var pp=window.screen.availHeight;
+       console.log(pp)
+        console.log(bhei)
+       if(bhei>=pp){
        	$("body,html").css("height","auto");
        	$("footer").css("bottom","-150px");
        }else{

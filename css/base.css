@@ -28,7 +28,7 @@ footer{
 .main{
 	width: 1200px;
 	position: relative;
-	z-index: 10;
+	z-index: 5;
 	margin-left: calc(50% - 600px);
 }
 
@@ -770,7 +770,7 @@ to {width:83%;}
 	border: 2px solid #FF8800;
 	margin-top: 17px;
     position: relative;
-    z-index:100;
+    z-index:5;
 }
 .list-input li{
 	float: left;

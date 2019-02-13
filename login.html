@@ -5,13 +5,19 @@
 		<title>登陆</title>
 		<link rel="stylesheet" href="css/base.css" />
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			footer{
+				background: white;
+				color: black;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="main log-head" >
 			<img src="img/login/LOGO.png"/>
 			<span>百客异想</span>
 		</div>
-		<main class="log-b passw">
+		<div class="log-b passw">
 			<div class="log-box">
 				<img class="choo-tip" src="img/login/buttion_hint.png"/>
 				<img class="choo-way" src="img/login/icon_code.png"/>
@@ -36,9 +42,9 @@
 					<a href="forgit.html">忘记密码</a>
 				</p>
 			</div>
-		</main>
+		</div>
 		
-		<main class="log-b erq">
+		<div class="log-b erq">
 			<div class="log-box">
 				<img class="choo-pc" src="img/login/icon_PC.png"/>
 				<p class="pc-tip">
@@ -48,9 +54,25 @@
 				</p>
 				<img src="img/login/RichScan.png"/>
 			</div>
-		</main>
+		</div>
+		<footer></footer>
 	</body>
 	<script type="text/javascript">
+		
+		$('header').load('top.html');
+        $('footer').load('footer.html');
+		var bhei= $("body").height();
+       var pp=window.screen.availHeight;
+       console.log(pp)
+        console.log(bhei)
+       if(bhei>=pp){
+       	$("body,html").css("height","auto");
+       	$("footer").css("bottom","-150px");
+       }else{
+       	$("body,html").css("height","100%");
+       		$("footer").css("bottom","0");
+       }
+		
 		
 		$(".in1").focus(function(){
 			$(".bb1").css("animation","mymove 1s forwards");
