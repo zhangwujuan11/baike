@@ -3,18 +3,16 @@ $(document).ready(function () {
        $('header').load('common/top.html');
         $('footer').load('common/footer.html');
 
-       var bhei= $("body").height();
-       var pp=window.screen.availHeight;
-//     console.log(pp)
-//      console.log(bhei)
-       if(bhei>=pp){
-       	$("body,html").css("height","auto");
-       	$("footer").css("bottom","-150px");
-       }else{
-       	$("body,html").css("height","100%");
-       		$("footer").css("bottom","0");
-       }
-
+//     var bhei= $("body").height();
+//     var pp=window.screen.availHeight;
+//     if(bhei>=pp){
+//     	$("body,html").css("height","auto");
+//     	$("footer").css("bottom","-150px");
+//     }else{
+//     	$("body,html").css("height","100%");
+//     		$("footer").css("bottom","0");
+//     }
+       
     //首页导航
     $(".root li").click(function(){
 		$(".tntreebox").css("background","rgba(0,0,0,0.5)")

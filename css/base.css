@@ -165,6 +165,14 @@ footer{
 	color: white;
 	padding-top:50px;
 	margin-top: 15px;
+	position: relative;
+	margin-top: 150px;
+}
+
+@media only screen and (max-height: 600px) {
+	footer{
+		margin-top: 0px;
+	}
 }
 footer span{
 	font-size: 12px;

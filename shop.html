@@ -270,7 +270,7 @@
 
 $(".list-men").click(function(e) {
 	if ($(e.target).is(".list-mencon, .list-mencon ul li, .list-mencon>p,  .list-mencon p button")) {
-   		if(!$(e.target).is(".list-mencon4, .list-mencon4>p,  .list-mencon4 p button")) {
+   		if(!$(e.target).is(".list-mencon4, .list-mencon4>p,  .list-mencon4 p button, .list-mencon ul li")) {
 			$(this).show();
    			console.log(222)
    		} else {
