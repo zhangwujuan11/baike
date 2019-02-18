@@ -3,16 +3,6 @@ $(document).ready(function () {
        $('header').load('common/top.html');
         $('footer').load('common/footer.html');
 
-//		var bhei= $("body").height();
-//     var pp=window.screen.availHeight;
-//     var fooh=$("footer").height();
-//     if(bhei+fooh>=pp){
-//     	$("body,html").css("height","auto");
-//     	$("footer").css("bottom","-150px");
-//     }else{
-//     	$("body,html").css("height","100%");
-//     		$("footer").css("bottom","0");
-//     }
        
     //首页导航
     $(".root li").click(function(){
