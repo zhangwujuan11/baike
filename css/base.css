@@ -61,7 +61,8 @@ header{
 	font-size: 12px;
 	color: #999999;
 	background: #F3F3F3;
-
+	height: 27px;
+	line-height: 27px;
 }
 header a{
 	color: #999999;
