@@ -2,6 +2,7 @@ body,html{
 	width: 100%;
 	margin: 0;
 	min-height: 100% !important;
+	position:absolute;
 }
 
 
@@ -65,11 +66,14 @@ footer{
 	font-size: 16px;
 	text-align: center;
 	color: white;
-	padding-top:50px;
-	margin-top: 15px;
-	clear: both; /* 清除浮动元素格式 */
+	padding:50px 0 0 0;
+	margin: 0;
 	bottom: 0;
-  position:absolute;
+	clear: both; /* 清除浮动元素格式 */
+	position:absolute;
+}
+.container{
+	padding-bottom: 150px;
 }
 header{
 	font-size: 12px;
