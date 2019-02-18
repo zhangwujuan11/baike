@@ -1,7 +1,8 @@
 body,html{
 	width: 100%;
 	margin: 0;
-	position: relative;
+	/*position: relative;*/
+	min-height: 100% !important;
 }
 
 
@@ -14,10 +15,7 @@ a,a:link,a:visited,a:hover,a:active{
 	text-decoration: none;
 	color:#999;
 }
-footer{
-	position: absolute;
-	bottom: 0px;
-}
+
 
 .fl{
 	float: left;
@@ -57,6 +55,23 @@ footer{
 }
 
 /*首页*/
+
+footer span{
+	font-size: 12px;
+}
+footer{
+	background: #444851;
+	width: 100%;
+	height: 150px;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	padding-top:50px;
+	margin-top: 15px;
+	clear: both; /* 清除浮动元素格式 */
+	bottom: 0;
+  position:absolute;
+}
 header{
 	font-size: 12px;
 	color: #999999;
@@ -157,27 +172,7 @@ header #loginout{
 	box-shadow: 5px 5px 20px #888888;
 	-moz-box-shadow: 5px 5px 20px #888888;
 }
-footer{
-	background: #6E6760;
-	width: 100%;
-	height: 150px;
-	font-size: 16px;
-	text-align: center;
-	color: white;
-	padding-top:50px;
-	margin-top: 15px;
-	position: relative;
-	margin-top: 150px;
-}
 
-@media only screen and (max-height: 600px) {
-	footer{
-		margin-top: 0px;
-	}
-}
-footer span{
-	font-size: 12px;
-}
 
 #pu-box{
 	position: absolute;

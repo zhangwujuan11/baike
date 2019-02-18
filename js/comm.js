@@ -3,9 +3,10 @@ $(document).ready(function () {
        $('header').load('common/top.html');
         $('footer').load('common/footer.html');
 
-//     var bhei= $("body").height();
+//		var bhei= $("body").height();
 //     var pp=window.screen.availHeight;
-//     if(bhei>=pp){
+//     var fooh=$("footer").height();
+//     if(bhei+fooh>=pp){
 //     	$("body,html").css("height","auto");
 //     	$("footer").css("bottom","-150px");
 //     }else{
