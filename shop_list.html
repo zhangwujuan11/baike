@@ -37,6 +37,11 @@
 								<button class="current">按区服</button>
 								<button>按跨区</button>
 							</p>
+							<h4>
+								快速选择：
+								<span>●地下城与勇士>广东区>广东1区>游戏币</span>
+								<span>●地下城与勇士>广东区>广东1区>游戏币</span>
+							</h4>
 							<ul>
 								<li>广东区</li>
 								<li>广东区</li>
@@ -126,19 +131,32 @@
 		
 		<div class="main">
 			<img class="fl" style="margin-top:15px;height: 36px;" src="img/buisLOGO.png"/>
-			<ul class="fr list-ult">
-				<a href="#"><li>我要买</li></a>
-				<a href="#"><li>我要卖</li></a>
-				<a href="#"><li>代合天空</li></a>
-				<a href="#"><li>代刷深渊</li></a>
-				<a href="#"><li>代强装备</li></a>
-				<a href="#"><li>代打卢克</li></a>
-			</ul>
+			
+			<ul class="logorbann">
+					<li>
+						我要买
+						<div class="logorbann-con">
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+						</div>
+					</li>
+					<li>
+						我要卖
+						<div class="logorbann-con">
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx <a href="#"> <<前往购买 </a> </p>
+						</div>
+					</li>
+				</ul>
 			<ol style="clear: both;margin: 0;"></ol>
 		</div>
 		<p class="overline"></p>
 		
-		<div class="list-topcon main">
+		<div class="list-topcon main" style="z-index: 1;">
 			<p class="change-way">
 				<img src="img/shop/icon_tab.png"/>
 				<span>按区服筛选</span>
@@ -317,6 +335,8 @@
 		<table class="main main-buy" border="0" cellspacing="0" cellpadding="0">
 			<thead>
 				<tr>
+					<th>商城</th>
+					<th>交易方式</th>
 					<th>单价</th>
 					<th>购买数量</th>
 					<th>付款金额</th>
@@ -325,9 +345,17 @@
 			</thead>
 			<tbody>
 				<tr>
+					<td style="width: 328px;">
+						<img style="margin-left:50px;" class="fl" src="img/shop/main-buy.png"/>
+						<p style="float: left;">
+							<span style="color: black;">平均发货2分钟</span> <br />
+							<span style="padding-left: 25px;">福建区建1区>>跨5</span>
+						</p>
+					</td>
+					<td>邮寄交易</td>
 					<td>
-						<img src="img/shop/main-buy.png"/>
-						<span class="maincolor">1元=43.33万游戏币</span>
+						<span class="maincolor">1元=43.33万游戏币</span><br />
+						<span>库存：47204万金</span>
 					</td>
 					<td>
 						<input type="text" placeholder="请输入购买数量"/>
@@ -345,8 +373,10 @@
 		<table class="main se-buy" border="0" cellspacing="0" cellpadding="0">
 			<thead>
 				<tr>
-					<th style="width: 670px;padding-left:60px;">购买金币</th>
+					<th style="width: 590px;padding-left:60px;">购买金币</th>
 					<th style="padding-left:30px;">单价</th>
+					<th>库存</th>
+					<th>数量</th>
 					<th>付款金额</th>
 					<th></th>
 				</tr>
@@ -355,6 +385,12 @@
 				<tr>
 					<td style="text-indent:50px;">5000万游戏币</td>
 					<td class="maincolor">1元=43.00万游戏币</td>
+					<td>123456万金</td>
+					<td>
+						<span class="jianinpu"><img src="img/personal/icon_jian.png"/></span>
+						<input type="text" class="show-numinpu" value="3">
+						<span class="jiainpu"><img src="img/personal/icon_plus.png"/></span>
+					</td>
 					<td class="maincolor" style="font-weight: 800;">
 						100.00元
 					</td>
@@ -363,11 +399,15 @@
 					</td>
 				</tr>
 				
-				
-				
 				<tr>
 					<td style="text-indent:50px;">5000万游戏币</td>
 					<td class="maincolor">1元=43.00万游戏币</td>
+					<td>123456万金</td>
+					<td>
+						<span class="jianinpu"><img src="img/personal/icon_jian.png"/></span>
+						<input type="text" class="show-numinpu" value="3">
+						<span class="jiainpu"><img src="img/personal/icon_plus.png"/></span>
+					</td>
 					<td class="maincolor" style="font-weight: 800;">
 						100.00元
 					</td>
@@ -379,6 +419,27 @@
 		</table>
 		<footer></footer>
 		<script type="text/javascript">
+			
+			$(".jianinpu").click(function  () {
+				var shonum=$(this).siblings(".show-numinpu").val();
+				if (shonum > 1) {
+					shonum-=1;
+					$(this).css("opacity","1")
+					$(this).siblings(".show-numinpu").val(shonum);
+				} else{
+					$(this).siblings(".show-numinpu").val(1);
+					$(this).css("opacity","0.5");
+				}
+			});
+			$(".jiainpu").click(function  () {
+				var shonwum=parseInt($(this).siblings(".show-numinpu").val())
+					shonwum=shonwum+1;
+					$(this).siblings(".show-numinpu").val(shonwum);
+					$(this).siblings(".jianinpu").css("opacity","1");
+			});
+			
+			
+			
 			$(".list-menclose").click(function  () {
 			   $(".list-men").hide();
 			});

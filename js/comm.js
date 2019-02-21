@@ -125,6 +125,14 @@ $(document).ready(function () {
 	var b= parseInt($("#show-numinpu").val())||0;
 	var c=a*b;
 	$("#tognum, .tognum").html(c.toFixed(2));
+	
+	
+	//店铺首页和列表添加交互
+	$(".logorbann li").hover(function(){
+     $(this).find(".logorbann-con").css({"display":"block","color":"#666"});
+	 },function(){
+	     $(this).find(".logorbann-con").css({"display":"none"});
+	 });
 
 });
 

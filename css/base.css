@@ -165,9 +165,15 @@ header #loginout{
 }
 .shop-show li{
 	width: 25%;
-	height: 245px;
+	height: 265px;
 	padding: 8px;
 	float: left;
+	text-align: left;
+	line-height: 25px;
+}
+.shop-show li span{
+	font-weight: 800;
+	color:#ff5565;
 }
 .shop-show li img{
 	margin-bottom: 10px;
@@ -915,7 +921,7 @@ header #loginout{
 	width: 1200px;
 	height: 207px;
 	position: absolute;
-	top: 75px;
+	top: 88px;
 	left: -26px;
 }
 .list-men .list-mencon ul{
@@ -1152,17 +1158,40 @@ header #loginout{
 .dete-con table td:last-child{
 	font-weight: 800;
 }
-.dete-con table td span{
+#jianinpu,#jiainpu{
 	display: block;
 	float: left;
 	height: 26px;
 	line-height: 26px;
 }
+#jianinpu img,#jiainpu img {
+    height: 26px;
+    margin-top: -2px;
+}
+
+.jianinpu,.jiainpu{
+	display: block;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.jianinpu img,.jiainpu img {
+    height: 26px;
+    margin-top: -2px;
+}
 .dete-con table td img{
 	height: 26px;
 	margin-top: -2px;
 }
-.dete-con table td #show-numinpu{
+#show-numinpu{
+	width: 46px;
+	border: 1px solid rgba(216,216,216,1);
+	text-align: center;
+	background: white;
+	height: 26px;
+	float: left;
+}
+.show-numinpu{
 	width: 46px;
 	border: 1px solid rgba(216,216,216,1);
 	text-align: center;
@@ -1349,4 +1378,73 @@ header #loginout{
 #payOnline .fr a{
 	font-size: 14px;
 	color: #FF8400;
+}
+
+
+
+/*店铺首页列表样式添加*/
+.list-mencon h4{
+	padding-left: 15px;
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+.list-mencon h4 span{
+	color: #FF8800;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.logorbann{
+    float: right;
+    height: 76px;
+    line-height: 85px;
+    width: 620px;
+}
+.logorbann li{
+	float: left;
+	width:100px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	position: relative;
+	height: 76px;
+}
+.logorbann li:hover{
+	background: #FF8800;
+	color: white;
+}
+.logorbann-con{
+	width:400px;
+	min-height: 200px;
+	background: white;
+	border: 1px solid #FF8800;
+	position: absolute;
+	z-index: 1000;
+	margin-top: -10px;
+	text-align: left;
+	font-weight: normal;
+	font-size:14px;
+	line-height: 30px;
+	padding: 10px;
+	display: none;
+}
+.logorbann-con span{
+	color: #ff8800;
+}
+.logorbann-con a{
+	color: red;
+	float: right;
+}
+
+.you{
+	float: right;
+	margin-top: 10px;
+}
+.friendtip{
+	padding: 25px;
+	background: #FCFDE6;
+	margin-bottom: 15px;
+}
+.friendtip a{
+	color: #82BE20;
+	text-decoration: underline;
 }
