@@ -1414,7 +1414,7 @@ header #loginout{
 }
 .logorbann-con{
 	width:400px;
-	min-height: 200px;
+	/*min-height: 200px;*/
 	background: white;
 	border: 1px solid #FF8800;
 	position: absolute;
@@ -1458,3 +1458,13 @@ header #loginout{
 	height: 20px;
 	line-height:18px;
 }
+.shop-show div{
+	float: left;
+	width: 280px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+
