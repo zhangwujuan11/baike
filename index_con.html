@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>店铺首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/tntreebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sollup.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.simple.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#serchpu input {
+				width: 460px;
+			}
+			
+			#serchpu {
+				margin-top: 0;
+			}
+			
+			.main {
+				position: static;
+			}
+			
+			.carousel-inner>.item>a>img,
+			.carousel-inner>.item>img,
+			.img-responsive,
+			.thumbnail a>img,
+			.thumbnail>img {
+				height: 400px;
+				width: 100%;
+			}
+			
+			.header {
+				display: none;
+			}
+			
+			.list-men .list-mencon {
+				top: 110px;
+			}
+			.spetip{
+				width: 210px;
+				height: 40px;
+				line-height: 40px;
+				text-indent: 30px;
+				color: white;
+				float: left;
+				background: url(img/shop/trapezoid.png) no-repeat;
+				margin-bottom: 0px;
+			}
+			
+			.topserch_box {
+				border-bottom: none;
+			}
+			
+			.topserch {
+				padding: 5px 0;
+			}
+			
+			.logorbann {
+				width: 80%;
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			.logorbann li {
+				color: #333;
+				height: 40px;
+			}
+			
+			.logorbann-con {
+				margin-top: 0px;
+			}
+			.so-btn {
+			    border: 0;
+			    height: 28px;
+			    cursor: pointer;
+			    line-height: 28px;
+			    padding: 0 16px;
+			    background:#ff8800;
+			    color: #ffffff;
+			    font-weight: bold;
+			    transition: all 200ms;
+			}
+			#carousel-example-generic{
+				border-top: 1px solid #ff8800;
+			}
+			.mainbtn{
+				width: auto;
+				height: 28px;
+				margin-left:103px;
+			}
+			#myTab{
+				margin-top: 0px;
+			}
+			#myTabContent>div{
+				padding: 8px 0;
+			}
+			#myTab a{
+				font-size: 15px;
+			}
+			.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+				color: #FF8800;
+				cursor: default;
+				background-color: #fff;
+				/* border-bottom: 2px solid #FF8800;*/
+				border:none;
+			}
+			.nav-tabs>li{
+				border-right: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				width: 33.33%;
+			}
+			.nav-tabs>li.active{
+				border-bottom: none;
+			}
+			.nav-tabs>li>a{
+				border-right: none;
+			}
+			#myTab li:last-of-type{
+				margin-left: 0px;
+			}
+			.nav-tabs{
+				border-bottom: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container" style="width:100%; padding-left: 0; padding-right: 0;">
+			<header></header>
+			<div class="topserch_box">
+				<div class="main">
+					<ul class="topserch" style="line-height: 70px;">
+						<li class="fl">
+							<img src="img/login/LOGO.png" />
+						</li>
+						<li class="reg-tit fl">
+							<span style="border-left: 1px solid #E5E5E5;padding-left: 22px;"><img src="img/personal/bt.png"/></span>
+						</li>
+						<div class="">
+							<div class="main" style="position: static;">
+								<ul class="fr list-input" style="z-index: 26;">
+									<li name="game" id="game">地下城与勇士<img src="img/shop/icon_down.png" alt="" /></li>
+									<li name="place1" id="place1">福建区<img src="img/shop/icon_down.png" alt="" /></li>
+									<li name="place2" id="place2">福建区2<img src="img/shop/icon_down.png" alt="" /></li>
+									<li name="currency" id="currency">游戏币<img src="img/shop/icon_down.png" alt="" /></li>
+									<input type="" name="" id="list-inputser" value="" placeholder="请输入搜索内容" />
+									<button id="per-bnt2">搜索</button>
+								</ul>
+								<div class="list-men">
+									<div class="main" style="position: relative;height: 100%;">
+
+										<div class="list-mencon1 list-mencon">
+											<img class="fr list-menclose" style="margin-top: 7px;" src="img/icon_offb.png" />
+											<p>
+												<button class="current">按区服</button>
+												<button>按跨区</button>
+											</p>
+											<h4>
+									快速选择：
+									<span>●地下城与勇士>广东区>广东1区>游戏币</span>
+									<span>●地下城与勇士>广东区>广东1区>游戏币</span>
+								</h4>
+											<ul>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<ol style="clear: both;"></ol>
+											</ul>
+										</div>
+										<div class="list-mencon2 list-mencon">
+											<img class="fr list-menclose" style="margin-top: 7px;" src="img/icon_offb.png" />
+											<ul>
+												<li>广东2</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<ol style="clear: both;"></ol>
+											</ul>
+										</div>
+										<div class="list-mencon3 list-mencon">
+											<img class="fr list-menclose" style="margin-top: 7px;" src="img/icon_offb.png" />
+											<ul>
+												<li>广东3</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<ol style="clear: both;"></ol>
+											</ul>
+										</div>
+										<div class="list-mencon4 list-mencon">
+											<img class="fr list-menclose" style="margin-top: 7px;" src="img/icon_offb.png" />
+											<ul>
+												<li>广东5</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<li>广东区</li>
+												<ol style="clear: both;"></ol>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<li style="clear: both;"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<p class="spetip">商品分类</p>
+				<ul class="logorbann">
+					<li>首页</li>
+					<li>
+						金币购买
+						<div class="logorbann-con">
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+						</div>
+					</li>
+					<li>
+						金币出售
+						<div class="logorbann-con">
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+							<p><span>●</span>逆水寒ol>xxx>xxxx>xxxx
+								<a href="#">
+									<<前往购买 </a>
+							</p>
+						</div>
+					</li>
+					<li>嘻哈收矛盾</li>
+					<li>我的推广</li>
+					<li>点券充值招商</li>
+					<li>金币寄售</li>
+					<li>账号交易</li>
+					<li>数码商城</li>
+				</ul>
+				<ol style="clear: both;margin: 0px;"></ol>
+			</div>
+
+			<!--轮播-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 400px;width:100%;">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/login/background.jpg">
+					</div>
+					<div class="item">
+						<img src="img/banner_1.png">
+					</div>
+					<div class="item">
+						<img src="img/banner_1.png">
+					</div>
+				</div>
+				<a class="left carousel-control" style="left: -30px !important;" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon"><img src="img/arrows_left.png"/></span>
+				</a>
+				<a class="right carousel-control" style="right: -30px !important;" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon"><img src="img/arrows_right.png"/></span>
+				</a>
+
+				<div id="treebox" class="tntreebox">
+					<img id="close" src="img/icon_off.png" alt="" />
+					<div class="list">
+						<div class="box root" style="display: block;margin-left: 0;">
+							<ul>
+								<li><label>游戏币</label></li>
+								<li><label>游戏帐号</label></li>
+								<li><label>深渊票</label></li>
+								<li><label>深渊票</label></li>
+								<li><label>深渊票</label></li>
+								<li><label>深渊票</label></li>
+								<li><label>深渊票</label></li>
+								<li><label>深渊票</label></li>
+								<li><label>深渊票</label></li>
+							</ul>
+						</div>
+						<span class="tree2">
+							<div id="o_1" class="box">
+								<ul>
+									<li class="children"><label>二级多选1-1</label></li>
+									<li class="children"><label>二级多选1-2</label></li>
+									<li class="children"><label>二级多选1-3</label></li>
+								</ul>
+							</div>
+							<div id="o_2" class="box">
+								<ul>
+									<li class="children"><label>二级多选11111111</label></li>
+									<li class="children"><label>二级多选1222</label></li>
+									<li class="children"><label>二级多选1-3</label></li>
+								</ul>
+							</div>
+						</span>
+
+						<span class="tree3">
+							<div id="o_1_1" class="box">
+								<ul>
+									<li v="o_1_1_1"><label>三级1</label></li>
+									<li v="o_1_1_2"><label>三级2</label></li>
+									<li v="o_1_1_3"><label>三级3</label></li>
+									<li v="o_1_1_4"><label>三级4</label></li>
+								</ul>
+							</div>
+							<div id="o_1_2" class="box">
+								<ul>
+									<li v="o_1_1_1"><label>三级1111111111</label></li>
+									<li v="o_1_1_2"><label>三级2222222222</label></li>
+									<li v="o_1_1_3"><label>三级33333333</label></li>
+									<li v="o_1_1_4"><label>三级4444444444</label></li>
+								</ul>
+							</div>
+							<div id="o_2_1" class="box">
+								<ul>
+									<li v="o_1_1_1"><label>三级9</label></li>
+									<li v="o_1_1_2"><label>三级6</label></li>
+									<li v="o_1_1_3"><label>三级3</label></li>
+									<li v="o_1_1_4"><label>三级54</label></li>
+								</ul>
+							</div>
+						</span>
+					</div>
+					<div class="ex-btn">
+						<p><button class="ex-btn1">购买商品</button></p>
+						<p><button class="ex-btn2">发布商品</button></p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="main">
+				<div id="syfx">
+			        <p>
+			            <img src="img/shop/icon_chart.png" alt="">
+			            <span>游戏物品价格查询</span>
+			            <select name="yxname" >
+			                <option hidden>游戏名称</option>
+			                <option value="2">CS</option>
+			                <option value="3">CS</option>
+			                <option value="4">CS</option>
+			            </select>
+			            <select name="yxdq" >
+			                <option hidden>游戏大区</option>
+			                <option value="2">CS</option>
+			                <option value="3">CS</option>
+			                <option value="4">CS</option>
+			            </select>
+			            <select name="yxfwq" >
+			                <option hidden>游戏服务器</option>
+			                <option value="2">CS</option>
+			                <option value="3">CS</option>
+			                <option value="4">CS</option>
+			            </select>
+			            <select name="yxfwq" >
+			                <option hidden>物品类型</option>
+			                <option value="2">CS</option>
+			                <option value="3">CS</option>
+			                <option value="4">CS</option>
+			            </select>
+			            <button class="so-btn">查询</button>
+			        </p>
+			
+			        <div id="main" style="width:900px;height:400px;"></div>
+			    </div>
+			    <div class="incon-ri">
+			    	<p class="incon-ritop"><img src="img/shop/icon_shortcut.png"/>快捷下单</p>
+			    	<p style="margin-bottom: 16px;">
+			    		游戏
+			    		<select name="incon1">
+			    			<option value="1">地下城与勇士</option>
+			    			<option value="2">地下城与勇士</option>
+			    			<option value="3">地下城与勇士</option>
+			    		</select>
+			    	</p>
+			    	<p style="margin-bottom: 16px;">
+			    		点卡
+			    		<select name="incon2">
+			    			<option value="1">地下城与勇士</option>
+			    			<option value="2">地下城与勇士</option>
+			    			<option value="3">地下城与勇士</option>
+			    		</select>
+			    	</p>
+			    	<p>
+			    		<span class="maincolor">￥963.00</span>
+			    		<button class="mainbtn">立即购买</button>
+			    	</p>
+			    </div>
+			    <div class="incon-ri" style="padding-left: 0px;padding-top: 0px;height: 252px;">
+	               <ul id="myTab" class="nav nav-tabs">
+					    <li class="active"><a href="#home" data-toggle="tab">出货必看</a></li>
+					    <li><a href="#payment" data-toggle="tab">公告</a></li>
+					    <li  style="border-right: none;"><a href="#paymented" data-toggle="tab">帮助中心</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content incon-tabcon">
+					    <div class="tab-pane fade in active" id="home">
+					    	<ul>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    	</ul>
+				    	</div>
+				    	<div class="tab-pane fade" id="payment">
+				    		<ul>
+					    		<li>456546 <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    	</ul>
+				    	</div>
+				    	<div class="tab-pane fade" id="paymented">
+				    		<ul>
+					    		<li>78595421 <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    		<li>如何快速找到装备  <span>21/03</span></li>
+					    	</ul>
+				    	</div>
+			    	</div>
+            	</div>
+            	<ol style="clear: both;"></ol>
+            	<div class="syfn">
+            		<p><img src="img/shop/icon_recommend.png"/>推荐商品</p>
+            		<ul>
+            			<li>
+            				<img src="img/shop/cai.png"/>地下城与勇士
+            				<span class="qfti">【福建1区】</span>
+            				<span class="maincolor">￥30000.00（1元=50w）</span>
+            				<span class="needhid">常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品</span>
+            				
+            			</li>
+            			<li>
+            				<img src="img/shop/jin.png"/>地下城与勇士
+            				<span class="qfti">【福建1区】</span>
+            				<span class="maincolor">￥30000.00（1元=50w）</span>
+            				<span class="needhid">日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品</span>
+            				
+            			</li>
+            			<li>
+            				<img src="img/shop/zhang.png"/>地下城与勇士
+            				<span class="qfti">【福建1区】</span>
+            				<span class="maincolor">￥30000.00（1元=50w）</span>
+            				<span class="needhid">日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品</span>
+            				
+            			</li>
+            			<li>
+            				<img src="img/shop/zhang.png"/>地下城与勇士
+            				<span class="qfti">【福建1区】</span>
+            				<span class="maincolor">￥30000.00（1元=50w）</span>
+            				<span class="needhid">日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品日常搬砖出品</span>
+            				
+            			</li>
+            		</ul>
+            	</div>
+            	<div class="incon-ri incon-ri2">
+			    	<p class="incon-ritop"><img src="img/shop/icon_sum.png"/>最新成交信息</p>
+			    	<ul>
+			    		<li><span class="left">地下城与勇士/福建二区</span> <span class="right maincolor">1234.00元</span></li>
+			    		<li><span class="left">地下城与勇士/福建二区</span> <span class="right maincolor">1234.00元</span></li>
+			    		<li><span class="left">地下城与勇士/福建二区</span> <span class="right maincolor">1234.00元</span></li>
+			    		<li><span class="left">地下城与勇士/福建二区12312321</span> <span class="right maincolor">1234.00元</span></li>
+			    	</ul>
+			    </div>
+			</div>
+
+			<!--页脚-->
+			<footer></footer>
+		</div>
+		<script type="text/javascript">
+			$(".list-menclose").click(function() {
+				$(".list-men").hide();
+			});
+
+			$(".list-men").click(function(e) {
+				if($(e.target).is(".list-mencon, .list-mencon ul li, .list-mencon>p,  .list-mencon p button")) {
+					if(!$(e.target).is(".list-mencon4, .list-mencon4>p,  .list-mencon4 p button, .list-mencon ul li")) {
+						$(this).show();
+						console.log(222)
+					} else {
+						$(this).hide();
+						console.log(333)
+
+					}
+				} else {
+					$(this).hide();
+				}
+			});
+
+			$(".list-mencon p button").click(function() {
+				$(this).addClass("current");
+				$(this).siblings().removeClass("current");
+				$(".list-men").show()
+			});
+
+			$("#game").click(function() {
+				$(".list-men .list-mencon1").css("left", "-26px");
+				$(".list-mencon1").show()
+				$(".list-mencon2,.list-mencon3,.list-mencon4").hide()
+				$(".list-men").show(function() {
+					$(".list-mencon1 li").click(function() {
+						$(".list-mencon2").show();
+						$(".list-mencon1,.list-mencon3,.list-mencon4").hide();
+						$(".list-men .list-mencon2 ul").css("padding", "10px");
+						$(".list-men .list-mencon2").css("left", "60px");
+						$(".list-mencon2 li").click(function() {
+							var tex = $(this).html();
+							$("#place2").html('请选择服务器<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+							$("#place1").html(tex + '<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+							$(".list-men .list-mencon3").css("left", "130px");
+							$(".list-mencon3").show();
+							$(".list-mencon1,.list-mencon4,.list-mencon2").hide();
+							$(".list-mencon3 li").click(function() {
+								var tex = $(this).html();
+								$("#place2").html(tex + '< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+								$(".list-men .list-mencon4").css("left", "203px");
+								$(".list-mencon4").show();
+								$(".list-mencon1,.list-mencon3,.list-mencon2").hide();
+								$(".list-mencon4 li").click(function() {
+									var tex = $(this).html();
+									$("#currency").html(tex + '< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+									$(".list-men").hide();
+								})
+							})
+						})
+						var tex = $(this).html();
+						$("#game").html(tex + '< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+
+					})
+				})
+
+			})
+
+			$("#place1").click(function() {
+				$(".list-mencon2").show();
+				$(".list-mencon1,.list-mencon3,.list-mencon4").hide()
+				$(".list-men .list-mencon2 ul").css("padding", "10px");
+				$(".list-men .list-mencon2").css("left", "60px");
+				$(".list-men").show(function() {
+						$(".list-mencon2 li").click(function() {
+							var tex = $(this).html();
+							$("#place2").html('请选择服务器<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+							$("#place1").html(tex + '<img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+							$(".list-men").hide();
+						})
+					}
+
+				)
+			})
+
+			$("#place2").click(function() {
+				$(".list-men .list-mencon3").css("left", "130px");
+				$(".list-mencon3").show()
+				$(".list-mencon1,.list-mencon4,.list-mencon2").hide()
+				$(".list-men").show(function() {
+						$(".list-mencon3 li").click(function() {
+							var tex = $(this).html();
+							$("#place2").html(tex + '< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+							$(".list-men").hide();
+						})
+					}
+
+				)
+			})
+			$("#currency").click(function() {
+				$(".list-men .list-mencon4").css("left", "203px");
+				$(".list-mencon4").show()
+				$(".list-mencon1,.list-mencon3,.list-mencon2").hide()
+				$(".list-men").show(function() {
+						$(".list-mencon4 li").click(function() {
+							var tex = $(this).html();
+							$("#currency").html(tex + '< img src="{$Think.config.cdn.url}img/shop/icon_down.png" alt="" />');
+							$(".list-men").hide();
+						})
+					}
+
+				)
+			})
+			
+			
+			    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+        title:{text:'哈哈哈'},
+        xAxis: {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            type: 'line'
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+		</script>
+	</body>
+
+</html>

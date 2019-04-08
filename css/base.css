@@ -101,6 +101,7 @@ header #loginout{
 	border-bottom: 1px solid #E5E5E5;
 }
 
+
 .dropdown-menu>li>a{
 	color: black;
 	background:white !important;
@@ -136,6 +137,134 @@ header #loginout{
 .shop_name{
 	font-size: 20px;
 	color: #333333;
+}
+#syfx{
+    width: 900px;
+    border: 1px solid #d6d6d6;
+    margin-top: 20px;
+    float: left;
+}
+.syfn{
+    width: 900px;
+    border: 1px solid #d6d6d6;
+    margin-top: 18px;
+    float: left;
+    padding: 10px 0 10px 30px;
+    margin-bottom: 20px;
+}
+.incon-ri2 .left{
+	float: left;
+	display: block;
+	width: 154px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.incon-ri2{
+	min-height: 210px;
+}
+.incon-ri2 .right{
+	float: right;
+}
+.incon-ri2 ul{
+	padding-right: 10px;
+}
+.incon-ri2 ul li{
+	height: 26px;
+	line-height: 26px;
+}
+.syfn img{
+	margin-right: 10px;
+}
+.syfn p{
+	border-bottom: 1px dashed #d6d6d6;
+	padding-bottom: 8px;
+}
+.syfn ul{
+	padding: 5px 10px;
+}
+.syfn ul li{
+	height: 34px;
+	line-height: 34px;
+}
+.syfn ul span{
+	margin-left: 12px;
+}
+.syfn{
+	min-height: 210px;
+}
+.needhid{
+	width: 370px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	float: right;
+	color: #999;
+	text-align: left;
+}
+.syfn .maincolor{
+	margin-left: 32px;
+}
+.syfn .qfti{
+	margin-left: 70px;
+}
+.incon-tabcon ul{
+	padding: 5px 20px;
+	color: #666;
+}
+.incon-tabcon ul li{
+	height: 28px;
+	line-height: 28px;
+}
+.incon-tabcon ul li:hover{
+	color: #ff8800;
+}
+.incon-tabcon ul span{
+	float: right;
+}
+.incon-ri{
+	border: 1px solid #d6d6d6;
+	border-radius: 2px;
+	width: 270px;
+	float: right;
+	margin-top: 18px;
+	padding: 10px 0 10px 20px;
+}
+.incon-ri img{
+	margin-right: 10px;
+}
+#syfx p{
+    text-indent: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 15px;
+}
+#syfx p span{
+    font-size: 16px;
+    margin: 0 10px;
+}
+#syfx p select{
+    width: 140px;
+    border: 1px solid #d6d6d6;
+    height: 27px;
+    margin: 0 7px;
+}
+#syfx p button{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.incon-ritop{
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 8px;
+	margin-bottom: 16px;
+	font-size: 15px;
+}
+.incon-ri select{
+	margin-left: 10px;
+	width: 190px;
+	height: 28px;
 }
 .topserch li:nth-child(1){
 	padding-right: 8px;
