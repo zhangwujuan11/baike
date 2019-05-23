@@ -1596,4 +1596,133 @@ header #loginout{
 	cursor: pointer;
 }
 
-
+/*新店铺首页*/
+#newsinpu{
+	width: 470px;
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	text-indent: 20px;
+	margin-left: 20px;
+}
+.newsinpucipo{
+	position: relative;
+    right: 30px;
+}
+.newsheader{
+	height: 50px;
+	background: white;
+	padding-top: 10px;
+}
+.nscon-top{
+	background: url(../img/newshop/bgk.png) no-repeat;
+	background-size: 100% 100%;
+	height: 300px;
+}
+.nscon-top img{
+	margin-left: calc(50% - 50px);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid #9B9694;
+	margin-top: 40px;
+}
+.nscon-top p{
+	text-align: center;
+}
+.nscon-top .nscon-toptip{
+	color: white;
+	font-size: 22px;
+	margin-top: 20px
+}
+.nscon-top .toptip-gxqm{
+	color: white;
+	font-size: 12px;
+}
+.nscon-top .mainbtn{
+	width: 100px;
+	height: 36px;
+	}
+.nscon-dowl{
+	width: 300px;
+	margin-top: 10px;
+	height: 100%;
+}
+#dowl-top{
+	background: white;
+	padding: 12px 40px;
+	height: 60px;
+	text-align: center;
+}
+#dowl-top p{
+	text-align: center;
+}
+#xiant{
+	height: 100%;
+	width: 1px;
+	border-left: 1px solid #E5E5E5;
+	display: block;
+	float: left;
+	margin-left: 52px;
+}
+#dowl-senc,#dowl-therc,#dowl-end{
+	background: white;
+	margin-top: 10px;
+}
+#dowl-senc p,#dowl-therc p,#dowl-end p{
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+	text-indent: 20px;
+	border-bottom: 1px solid #F5F5F2;
+	height: 40px;
+	line-height: 40px;
+}
+#dowl-senc .dowl-senccon{
+	padding: 14px 20px;
+}
+#dowl-senc .dowl-senccon img{
+	margin-right: 10px;
+}
+#dowl-senc span{
+	display: block;
+	border-bottom: 1px solid #F5F5F2;
+	padding-bottom: 14px;
+	font-size: 14px;
+	color: #333;
+}
+#dowl-therc ul{
+	padding: 14px 20px;
+}
+#dowl-therc ul img{
+	width: 96px;
+	height: 62px;
+	float: left;
+	margin-right: 10px;
+}
+#dowl-therc ul div{
+	float: right;
+	color: #333333;
+	font-size: 14px;
+	width: 150px;
+}
+#dowl-therc ul ol{
+	clear: both;
+}
+#dowl-therc ul li{
+	border-bottom: 1px solid #F5F5F2;
+	margin: 14px 0 0 0;
+	padding-bottom: 14px;
+}
+#dowl-end ul{
+	padding: 20px;
+}
+#dowl-end ul li{
+	float: left;
+	color: #666;
+	font-size: 14px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#dowl-end ul li:hover{
+	color: #FF8800;
+}
