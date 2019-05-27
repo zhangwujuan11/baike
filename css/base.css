@@ -1726,3 +1726,75 @@ header #loginout{
 #dowl-end ul li:hover{
 	color: #FF8800;
 }
+.nscon-dowr{
+	width: 890px;
+	margin-top: 10px;
+	height: 100%;
+}
+.nscon-dowr li{
+	width: 100%;
+	background: white;
+	margin-bottom: 10px;
+	padding: 20px 20px 0 20px;
+}
+#head-portrait{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	
+}
+#shop-name{
+	font-size: 14px;
+	color: #333;
+	font-weight: bold;
+}
+.head-porbox{
+	height: 80%;
+	float: left;
+	width: 50px;
+	margin-right: 16px;
+}
+#show-time{
+	font-size: 12px;
+	color: #858585;
+}
+.head-showbox{
+	float: left;
+	margin-top: 8px;
+	width: calc(100% - 67px);
+}
+.head-showbox .nscon-con{
+	font-size: 14px;
+	color: #333;
+	margin-top: 18px;
+}
+.con-imgs li{
+	padding: 12px 0;
+	margin-bottom: 0;
+}
+#con-dow{
+	border-top: 1px solid #F5F5F2;
+	width: 890px;
+	margin-left: -20px;
+}
+#con-dow{
+	padding: 10px 0;
+	height: 40px;
+}
+#con-dow li{
+	width:  calc( 25% - 3px);
+	text-align: center;
+	padding: 0;
+	float: left;
+	border-right: 1px solid #F5F5F2;
+	margin: 0;
+	color: #666;
+	cursor: pointer;
+}
+#con-dow li img{
+	margin-right: 7px;
+}
+.con-imgs img{
+	max-width: 500px;
+	max-height: 300px;
+}
